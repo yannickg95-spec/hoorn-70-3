@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Op weg naar Hoorn</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏁</text></svg>">
+<style>
+:root{--bg:#f6f5f1;--card:#fff;--ink:#16191d;--muted:#666d75;--line:#e6e3dd;--accent:#0f4c6b;
+  --zwemmen:#0277bd;--fietsen:#e65100;--lopen:#2e7d32;--kracht:#7b1fa2;--rust:#a0a5ab;--race:#c62828;--info:#b5bac0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+header{background:var(--accent);color:#fff;padding:28px 0 22px}
+h1{margin:0;font-size:32px;line-height:1.1;letter-spacing:-.02em}
+header p{margin:6px 0 0;opacity:.85}
+.count{display:inline-block;margin-top:14px;background:rgba(255,255,255,.15);border-radius:99px;padding:5px 14px;font-weight:700}
+.progress{height:6px;background:rgba(255,255,255,.2);border-radius:9px;margin-top:16px;overflow:hidden}
+.progress i{display:block;height:100%;background:#fff;border-radius:9px}
+
+.nav{display:flex;align-items:center;gap:8px;margin:22px 0 4px}
+.nav h2{flex:1;margin:0;font-size:21px;line-height:1.25}
+.nav h2 small{display:block;font-size:14px;font-weight:500;color:var(--muted)}
+button{appearance:none;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:9px 13px;font:inherit;font-size:15px;font-weight:600;color:var(--ink);cursor:pointer}
+button[disabled]{opacity:.3;cursor:default}
+#now{margin:0 0 4px}
+.focus{color:var(--muted);margin:6px 0 14px;font-size:15px}
+
+.day{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:8px}
+.day.today{border:2px solid var(--accent)}
+.day.past{opacity:.55}
+.date{width:46px;flex:none;text-align:center;line-height:1.15}
+.date b{display:block;font-size:15px}
+.date span{font-size:13px;color:var(--muted)}
+.today .date b{color:var(--accent)}
+.list{flex:1;min-width:0}
+.s+.s{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}
+.s .t{font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.dot{width:10px;height:10px;border-radius:50%;flex:none;background:var(--c)}
+.meta{font-weight:500;color:var(--muted);font-size:14px}
+.s p{margin:3px 0 0 18px;font-size:14.5px;color:#3a4048}
+.rust .t,.info .t{font-weight:500;color:var(--muted)}
+.star{color:#d49b00}
+.log{margin-top:10px;border-radius:10px;padding:9px 11px;background:#eef7ee;border-left:4px solid #2e7d32;font-size:14.5px}
+.log.aandacht{background:#fff4e5;border-color:#ef6c00}
+.log.gemist{background:#f1f1ef;border-color:#a0a5ab}
+.log b{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:#3a4048;margin-bottom:2px}
+.log ul{margin:2px 0 6px;padding-left:18px}
+.log p{margin:0;color:#2a2f35}
+
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin-top:10px}
+summary{font-weight:700;cursor:pointer}
+details ul{padding-left:20px;margin:10px 0 2px}
+details li{margin:5px 0;font-size:15px}
+table{border-collapse:collapse;width:100%;font-size:15px;margin-top:8px}
+td{padding:6px 4px;border-bottom:1px solid var(--line)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin:22px 0 4px}
+.legend span{display:flex;align-items:center;gap:6px}
+footer{color:var(--muted);font-size:13px;padding:26px 0 40px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>Op weg naar Hoorn</h1>
+  <p id="race"></p>
+  <span class="count" id="count"></span>
+  <div class="progress"><i id="bar"></i></div>
+</div></header>
+
+<main class="wrap">
+  <div class="nav">
+    <button id="prev" aria-label="Vorige week">←</button>
+    <h2 id="title"></h2>
+    <button id="next" aria-label="Volgende week">→</button>
+  </div>
+  <button id="now">Naar deze week</button>
+  <p class="focus" id="focus"></p>
+  <div id="days"></div>
+
+  <div class="legend">
+    <span><i class="dot" style="--c:var(--zwemmen)"></i>Zwemmen</span>
+    <span><i class="dot" style="--c:var(--fietsen)"></i>Fietsen</span>
+    <span><i class="dot" style="--c:var(--lopen)"></i>Lopen</span>
+    <span><i class="dot" style="--c:var(--kracht)"></i>Kracht</span>
+    <span><span class="star">★</span>Belangrijkste trainingen</span>
+  </div>
+
+  <details>
+    <summary>Zones: hoe hard is Z1 t/m Z5?</summary>
+    <table>
+      <tr><td><b>Z1</b></td><td>Heel rustig, je kunt zingen</td><td>&lt; 125</td></tr>
+      <tr><td><b>Z2</b></td><td>Rustig, hele zinnen praten</td><td>125–145</td></tr>
+      <tr><td><b>Z3</b></td><td>Tempo / 70.3-tempo, korte zinnen</td><td>146–158</td></tr>
+      <tr><td><b>Z4</b></td><td>Zwaar, een paar woorden</td><td>159–170</td></tr>
+      <tr><td><b>Z5</b></td><td>Maximaal</td><td>&gt; 170</td></tr>
+    </table>
+    <ul>
+      <li>Hartslag geldt voor lopen. Op de fiets ligt hij 5–10 slagen lager. Zwemmen gaat op gevoel.</li>
+      <li>Voorlopige zones. Na de testweek (week 9) stellen we ze bij.</li>
+      <li>Rustig is echt rustig: de 15 km van 15 november had een gemiddelde hartslag van 169, en dat is Z4/Z5.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Spelregels</summary>
+    <ul>
+      <li>Dagen schuiven mag. Een gemiste training niet inhalen.</li>
+      <li>Garmin Readiness onder 25 of hersteltijd boven 48 uur: maak van een ★-training een rustige training, of neem rust.</li>
+      <li>Koorts of iets op de borst: rust. Pijn die erger wordt tijdens het bewegen: stoppen.</li>
+      <li>Controleer bij het zwemmen de baanlengte in het horloge.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Raceplan · zondag 20 juni</summary>
+    <ul>
+      <li><b>Ochtend:</b> ontbijt ±3 uur voor de start. Niets nieuws: geen nieuwe kleding, schoenen of voeding.</li>
+      <li><b>Zwemmen 1,9 km:</b> rustig starten, eigen ritme, elke 6–8 slagen vooruit kijken.</li>
+      <li><b>Fietsen 90 km:</b> eerste 20 min rustig, daarna Z2 tot lage Z3. Elk uur ±60 g koolhydraten en een bidon drinken.</li>
+      <li><b>Lopen 21,1 km:</b> eerste 5 km langzamer dan je wilt. Bij elke post drinken. Vanaf km 15 mag het tempo omhoog. 🏁</li>
+    </ul>
+  </details>
+</main>
+
+<footer><div class="wrap">Schema opgesteld met Claude op basis van haar Garmin-data · bijgewerkt <span id="upd"></span></div></footer>
+
+<script src="data.js"></script>
+<script>
+(function(){
+  const P=window.PLAN,W=P.weken;
+  const C={zwemmen:"var(--zwemmen)",fietsen:"var(--fietsen)",lopen:"var(--lopen)",kracht:"var(--kracht)",rust:"var(--rust)",race:"var(--race)",info:"var(--info)"};
+  const DAG=["Ma","Di","Wo","Do","Vr","Za","Zo"],MND=["jan","feb","mrt","apr","mei","jun","jul","aug","sep","okt","nov","dec"];
+  const pd=s=>{const[a,b,c]=s.split("-").map(Number);return new Date(a,b-1,c)};
+  const add=(x,n)=>{const y=new Date(x);y.setDate(y.getDate()+n);return y};
+  const fmt=x=>x.getDate()+" "+MND[x.getMonth()];
+  const same=(a,b)=>a.getTime()===b.getTime();
+  const iso=x=>x.getFullYear()+"-"+String(x.getMonth()+1).padStart(2,"0")+"-"+String(x.getDate()).padStart(2,"0");
+  const dur=m=>{if(!m)return"";const h=Math.floor(m/60),r=m%60;return h?h+"u"+(r?String(r).padStart(2,"0"):""):r+" min"};
+  const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const today=new Date();today.setHours(0,0,0,0);
+  const race=pd(P.race.datum);
+
+  let cur=W.findIndex(w=>{const s=pd(w.start);return today>=s&&today<add(s,7)});
+  if(cur<0)cur=today<pd(W[0].start)?0:W.length-1;
+
+  document.getElementById("race").textContent=P.race.naam+" · zondag "+fmt(race)+" "+race.getFullYear();
+  const n=Math.round((race-today)/864e5);
+  document.getElementById("count").textContent=n>1?"Nog "+n+" dagen":n===1?"Morgen!":n===0?"Vandaag! 🏁":"Gefinisht 🏅";
+  const first=pd(W[0].start);
+  document.getElementById("bar").style.width=Math.min(100,Math.max(2,(today-first)/(race-first)*100))+"%";
+  document.getElementById("upd").textContent=fmt(pd(P.bijgewerkt))+" "+pd(P.bijgewerkt).getFullYear();
+
+  let i=cur;
+  function show(k){
+    i=Math.max(0,Math.min(W.length-1,k));
+    const w=W[i],s=pd(w.start);
+    const tot=w.totaal?" · "+dur(w.totaal):"";
+    document.getElementById("title").innerHTML=(w.nr?"Week "+w.nr+" <span style='color:var(--muted);font-weight:500'>van "+(W.length-1)+"</span>":"Startweek")+
+      "<small>"+fmt(s)+" – "+fmt(add(s,6))+(w.nr?" · "+esc(w.label):"")+tot+"</small>";
+    document.getElementById("focus").textContent=w.focus||"";
+    document.getElementById("prev").disabled=i===0;
+    document.getElementById("next").disabled=i===W.length-1;
+    document.getElementById("now").style.display=i===cur?"none":"";
+    history.replaceState&&history.replaceState(null,"","#w"+w.nr);
+    const box=document.getElementById("days");box.innerHTML="";
+    w.dagen.forEach((ss,d)=>{
+      const dt=add(s,d),lg=(P.logboek||{})[iso(dt)];
+      if(!ss.length&&!lg)return;
+      const el=document.createElement("div");
+      el.className="day"+(same(dt,today)?" today":"")+(dt<today&&!lg?" past":"");
+      let h=`<div class="date"><b>${same(dt,today)?"Nu":DAG[d]}</b><span>${fmt(dt)}</span></div><div class="list">`;
+      ss.forEach(x=>{
+        const m=[dur(x.min),x.zone].filter(Boolean).join(" · ");
+        h+=`<div class="s ${x.sport}" style="--c:${C[x.sport]}"><div class="t"><i class="dot"></i>${esc(x.title)}${x.key?' <span class="star">★</span>':""}${m?` <span class="meta">${esc(m)}</span>`:""}</div>${x.detail?`<p>${esc(x.detail)}</p>`:""}</div>`;
+      });
+      if(lg){
+        const lab={goed:"✓ Gedaan · goed",aandacht:"✓ Gedaan · let op",gemist:"Niet gedaan"}[lg.oordeel]||"✓ Gedaan";
+        h+=`<div class="log ${lg.oordeel||""}"><b>${lab}</b>${(lg.gedaan||[]).length?"<ul>"+lg.gedaan.map(a=>"<li>"+esc(a.tekst)+"</li>").join("")+"</ul>":""}${lg.feedback?"<p>"+esc(lg.feedback)+"</p>":""}</div>`;
+      }
+      el.innerHTML=h+"</div>";box.appendChild(el);
+    });
+  }
+  document.getElementById("prev").onclick=()=>show(i-1);
+  document.getElementById("next").onclick=()=>show(i+1);
+  document.getElementById("now").onclick=()=>show(cur);
+  const m=location.hash.match(/^#w(\d+)$/);
+  show(m?W.findIndex(w=>w.nr===+m[1]):cur);
+})();
+</script>
+</body>
+</html>
