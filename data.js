@@ -74,7 +74,7 @@ window.PLAN = {
    "fase": "reset",
    "label": "Startweek",
    "focus": "Even gas terug na je zware week.",
-   "totaal": 145,
+   "totaal": 40,
    "dagen": [
     [],
     [],
@@ -101,25 +101,29 @@ window.PLAN = {
     ],
     [
      {
-      "sport": "fietsen",
-      "title": "Fietsen rustig",
-      "min": 60,
-      "detail": "60 min rustig, Tacx of buiten.",
-      "zone": "Z2",
+      "sport": "rust",
+      "title": "Rust",
+      "min": 0,
+      "detail": "Rust. Een wandeling mag.",
+      "zone": "",
       "key": false
      }
     ],
     [
      {
-      "sport": "lopen",
-      "title": "Hardlopen rustig",
-      "min": 45,
-      "detail": "45 min rustig, hartslag onder 150.",
-      "zone": "Z1–Z2",
+      "sport": "rust",
+      "title": "Rust",
+      "min": 0,
+      "detail": "Rust. Een wandeling mag.",
+      "zone": "",
       "key": false
      }
     ]
-   ]
+   ],
+   "aangepast": {
+    "5": "Je kunt vandaag niet trainen. Na je zware week is een rustig weekend prima.",
+    "6": "Je kunt vandaag niet trainen."
+   }
   },
   {
    "nr": 1,
@@ -207,16 +211,6 @@ window.PLAN = {
     ],
     [
      {
-      "sport": "rust",
-      "title": "Rust",
-      "min": 0,
-      "detail": "",
-      "zone": "",
-      "key": false
-     }
-    ],
-    [
-     {
       "sport": "zwemmen",
       "title": "Zwemmen rustig",
       "min": 50,
@@ -273,6 +267,16 @@ window.PLAN = {
     ],
     [
      {
+      "sport": "rust",
+      "title": "Rust",
+      "min": 0,
+      "detail": "Rust.",
+      "zone": "",
+      "key": false
+     }
+    ],
+    [
+     {
       "sport": "fietsen",
       "title": "Duurrit rustig",
       "min": 60,
@@ -291,7 +295,11 @@ window.PLAN = {
       "key": false
      }
     ]
-   ]
+   ],
+   "aangepast": {
+    "3": "Je zwem- en krachttraining van vrijdag 27 november is naar vandaag verschoven, omdat je vrijdag niet kunt.",
+    "4": "Je kunt vandaag niet trainen; je zwem- en krachttraining is naar donderdag verschoven."
+   }
   },
   {
    "nr": 2,

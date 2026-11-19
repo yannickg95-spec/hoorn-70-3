@@ -1,1 +1,21 @@
-{}
+{
+ "2026-11-21": {
+  "reden": "Je kunt vandaag niet trainen. Na je zware week is een rustig weekend prima.",
+  "sessies": [{"ref": "rust", "detail": "Rust. Een wandeling mag."}]
+ },
+ "2026-11-22": {
+  "reden": "Je kunt vandaag niet trainen.",
+  "sessies": [{"ref": "rust", "detail": "Rust. Een wandeling mag."}]
+ },
+ "2026-11-26": {
+  "reden": "Je zwem- en krachttraining van vrijdag 27 november is naar vandaag verschoven, omdat je vrijdag niet kunt.",
+  "sessies": [
+   {"sport": "zwemmen", "title": "Zwemmen rustig", "min": 50, "detail": "1500 m rustig doorzwemmen.", "zone": "Z1–Z2"},
+   {"ref": "krachtB", "fase": "reset", "soort": "herstel"}
+  ]
+ },
+ "2026-11-27": {
+  "reden": "Je kunt vandaag niet trainen; je zwem- en krachttraining is naar donderdag verschoven.",
+  "sessies": [{"ref": "rust", "detail": "Rust."}]
+ }
+}
