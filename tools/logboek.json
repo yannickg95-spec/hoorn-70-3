@@ -1,0 +1,36 @@
+{
+ "2026-11-16": {
+  "gedaan": [
+   {
+    "sport": "zwemmen",
+    "tekst": "1600 m · 47 min zwemmen (1 uur totaal) · ±2:57/100 m · hartslag gem. 116"
+   }
+  ],
+  "oordeel": "goed",
+  "feedback": "Precies goed: rustig en gelijkmatig, en een fijne afstand. Over een paar weken komt er meer techniek in (drills)."
+ },
+ "2026-11-18": {
+  "gedaan": [
+   {
+    "sport": "kracht",
+    "tekst": "Back-to-Basics · 24 min actief"
+   }
+  ],
+  "oordeel": "goed",
+  "feedback": "Lichte krachttraining, prima als onderhoud in een zware week."
+ },
+ "2026-11-19": {
+  "gedaan": [
+   {
+    "sport": "fietsen",
+    "tekst": "Blok 1: 31 min · 19,2 km/u · hartslag gem. 139"
+   },
+   {
+    "sport": "fietsen",
+    "tekst": "Blok 2: 31 min · 19,2 km/u · hartslag gem. 154"
+   }
+  ],
+  "oordeel": "aandacht",
+  "feedback": "Het eerste half uur was mooi rustig (hartslag 139, Z2). In het tweede half uur ging de hartslag naar 154, en dat is op de fiets al zwaar (Z4). Op een dag met Readiness 7/100 en nog ruim 2 dagen hersteltijd had dat rustig moeten blijven. De rest van vandaag: rust."
+ }
+}
