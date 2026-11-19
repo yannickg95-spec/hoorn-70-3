@@ -73,7 +73,7 @@ window.PLAN = {
    "start": "2026-11-16",
    "fase": "reset",
    "label": "Startweek",
-   "focus": "Even gas terug na een zware week.",
+   "focus": "Even gas terug na je zware week.",
    "totaal": 145,
    "dagen": [
     [],
@@ -298,7 +298,7 @@ window.PLAN = {
    "start": "2026-11-30",
    "fase": "basis1",
    "label": "Opbouwweek",
-   "focus": "Aerobe basis. Vrijdag een zwemtest: daarmee bepalen we haar zwemtempo's.",
+   "focus": "Aerobe basis. Vrijdag een zwemtest: daarmee bepalen we je zwemtempo's.",
    "totaal": 410,
    "dagen": [
     [
@@ -392,7 +392,7 @@ window.PLAN = {
       "sport": "zwemmen",
       "title": "Zwemtest",
       "min": 50,
-      "detail": "Inzwemmen · 400 m zo snel als gelijkmatig kan · 5 min rust · 200 m zo snel mogelijk. Tijden doorsturen.",
+      "detail": "Inzwemmen · 400 m zo snel als gelijkmatig kan · 5 min rust · 200 m zo snel mogelijk. Stuur je tijden door naar Yannick.",
       "zone": "Test",
       "key": true
      },
@@ -1566,7 +1566,7 @@ window.PLAN = {
       "sport": "fietsen",
       "title": "Fietstest (Tacx)",
       "min": 60,
-      "detail": "15 min inrijden · 20 min zo hard als gelijkmatig kan · uitrijden. Gem. vermogen en hartslag doorsturen.",
+      "detail": "15 min inrijden · 20 min zo hard als gelijkmatig kan · uitrijden. Stuur je gemiddelde vermogen en hartslag door naar Yannick.",
       "zone": "Test",
       "key": true
      }
@@ -1576,7 +1576,7 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Looptest",
       "min": 50,
-      "detail": "15 min inlopen · 20 min zo hard als gelijkmatig kan · uitlopen. Gem. hartslag laatste 10 min doorsturen.",
+      "detail": "15 min inlopen · 20 min zo hard als gelijkmatig kan · uitlopen. Stuur je gemiddelde hartslag van de laatste 10 min door naar Yannick.",
       "zone": "Test",
       "key": true
      }
@@ -1596,7 +1596,7 @@ window.PLAN = {
       "sport": "zwemmen",
       "title": "Zwemtest",
       "min": 50,
-      "detail": "Inzwemmen · 400 m zo snel als gelijkmatig kan · 5 min rust · 200 m zo snel mogelijk. Tijden doorsturen.",
+      "detail": "Inzwemmen · 400 m zo snel als gelijkmatig kan · 5 min rust · 200 m zo snel mogelijk. Stuur je tijden door naar Yannick.",
       "zone": "Test",
       "key": true
      },
@@ -2942,7 +2942,7 @@ window.PLAN = {
       "sport": "fietsen",
       "title": "Fietstest (Tacx)",
       "min": 60,
-      "detail": "15 min inrijden · 20 min zo hard als gelijkmatig kan · uitrijden. Gem. vermogen en hartslag doorsturen.",
+      "detail": "15 min inrijden · 20 min zo hard als gelijkmatig kan · uitrijden. Stuur je gemiddelde vermogen en hartslag door naar Yannick.",
       "zone": "Test",
       "key": true
      }
@@ -2952,7 +2952,7 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Looptest",
       "min": 50,
-      "detail": "15 min inlopen · 20 min zo hard als gelijkmatig kan · uitlopen. Gem. hartslag laatste 10 min doorsturen.",
+      "detail": "15 min inlopen · 20 min zo hard als gelijkmatig kan · uitlopen. Stuur je gemiddelde hartslag van de laatste 10 min door naar Yannick.",
       "zone": "Test",
       "key": true
      }
@@ -2972,7 +2972,7 @@ window.PLAN = {
       "sport": "zwemmen",
       "title": "Zwemtest",
       "min": 50,
-      "detail": "Inzwemmen · 400 m zo snel als gelijkmatig kan · 5 min rust · 200 m zo snel mogelijk. Tijden doorsturen.",
+      "detail": "Inzwemmen · 400 m zo snel als gelijkmatig kan · 5 min rust · 200 m zo snel mogelijk. Stuur je tijden door naar Yannick.",
       "zone": "Test",
       "key": true
      },
@@ -4302,7 +4302,7 @@ window.PLAN = {
    "start": "2027-05-10",
    "fase": "opbouw",
    "label": "Herstelweek",
-   "focus": "Herstelweek. Check je wedstrijdspullen.",
+   "focus": "Herstelweek. Check of al je wedstrijdspullen er zijn en goed zitten.",
    "totaal": 445,
    "dagen": [
     [
