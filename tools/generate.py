@@ -68,7 +68,7 @@ def zwem_ma(m, kind):
 def zwem_vr(m, phase, kind, wk):
     if kind in ("test", "zwemtest"):
         return S("zwemmen", "Zwemtest", swim_min(1500),
-                 "Inzwemmen · 400 m zo snel als gelijkmatig kan · 5 min rust · 200 m zo snel mogelijk. Stuur je tijden door naar Yannick.", "Test", True)
+                 "Inzwemmen · 400 m zo snel als gelijkmatig kan · 5 min rust · 200 m zo snel mogelijk. Druk na elk stuk op de rondeknop van je horloge; de tijden worden daarna automatisch uit je Garmin gehaald.", "Test", True)
     if kind == "herstel":
         return S("zwemmen", "Zwemmen rustig", swim_min(m), f"{m} m rustig doorzwemmen.", "Z1–Z2")
     if phase in ("reset", "basis1"):
@@ -83,7 +83,7 @@ def zwem_vr(m, phase, kind, wk):
 
 def fiets_di(minutes, phase, kind, wk):
     if kind == "test":
-        return S("fietsen", "Fietstest (Tacx)", 60, "15 min inrijden · 20 min zo hard als gelijkmatig kan · uitrijden. Stuur je gemiddelde vermogen en hartslag door naar Yannick.", "Test", True)
+        return S("fietsen", "Fietstest (Tacx)", 60, "15 min inrijden · 20 min zo hard als gelijkmatig kan · uitrijden. Druk aan het begin en eind van de 20 min op de rondeknop; de uitslag wordt automatisch uit je Garmin gehaald.", "Test", True)
     if kind == "herstel" or phase == "reset":
         return S("fietsen", "Tacx rustig", minutes, f"{minutes} min rustig, cadans 85–95.", "Z1–Z2")
     if phase == "basis1":
@@ -97,7 +97,7 @@ def fiets_di(minutes, phase, kind, wk):
 
 def loop_wo(minutes, phase, kind, wk):
     if kind == "test":
-        return S("lopen", "Looptest", 50, "15 min inlopen · 20 min zo hard als gelijkmatig kan · uitlopen. Stuur je gemiddelde hartslag van de laatste 10 min door naar Yannick.", "Test", True)
+        return S("lopen", "Looptest", 50, "15 min inlopen · 20 min zo hard als gelijkmatig kan · uitlopen. Druk aan het begin en eind van de 20 min op de rondeknop; de uitslag wordt automatisch uit je Garmin gehaald.", "Test", True)
     if kind == "herstel" or phase == "reset":
         return S("lopen", "Hardlopen rustig", minutes, f"{minutes} min rustig, hartslag onder 150.", "Z1–Z2")
     if phase == "basis1":

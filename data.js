@@ -392,7 +392,7 @@ window.PLAN = {
       "sport": "zwemmen",
       "title": "Zwemtest",
       "min": 50,
-      "detail": "Inzwemmen · 400 m zo snel als gelijkmatig kan · 5 min rust · 200 m zo snel mogelijk. Stuur je tijden door naar Yannick.",
+      "detail": "Inzwemmen · 400 m zo snel als gelijkmatig kan · 5 min rust · 200 m zo snel mogelijk. Druk na elk stuk op de rondeknop van je horloge; de tijden worden daarna automatisch uit je Garmin gehaald.",
       "zone": "Test",
       "key": true
      },
@@ -1566,7 +1566,7 @@ window.PLAN = {
       "sport": "fietsen",
       "title": "Fietstest (Tacx)",
       "min": 60,
-      "detail": "15 min inrijden · 20 min zo hard als gelijkmatig kan · uitrijden. Stuur je gemiddelde vermogen en hartslag door naar Yannick.",
+      "detail": "15 min inrijden · 20 min zo hard als gelijkmatig kan · uitrijden. Druk aan het begin en eind van de 20 min op de rondeknop; de uitslag wordt automatisch uit je Garmin gehaald.",
       "zone": "Test",
       "key": true
      }
@@ -1576,7 +1576,7 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Looptest",
       "min": 50,
-      "detail": "15 min inlopen · 20 min zo hard als gelijkmatig kan · uitlopen. Stuur je gemiddelde hartslag van de laatste 10 min door naar Yannick.",
+      "detail": "15 min inlopen · 20 min zo hard als gelijkmatig kan · uitlopen. Druk aan het begin en eind van de 20 min op de rondeknop; de uitslag wordt automatisch uit je Garmin gehaald.",
       "zone": "Test",
       "key": true
      }
@@ -1596,7 +1596,7 @@ window.PLAN = {
       "sport": "zwemmen",
       "title": "Zwemtest",
       "min": 50,
-      "detail": "Inzwemmen · 400 m zo snel als gelijkmatig kan · 5 min rust · 200 m zo snel mogelijk. Stuur je tijden door naar Yannick.",
+      "detail": "Inzwemmen · 400 m zo snel als gelijkmatig kan · 5 min rust · 200 m zo snel mogelijk. Druk na elk stuk op de rondeknop van je horloge; de tijden worden daarna automatisch uit je Garmin gehaald.",
       "zone": "Test",
       "key": true
      },
@@ -2942,7 +2942,7 @@ window.PLAN = {
       "sport": "fietsen",
       "title": "Fietstest (Tacx)",
       "min": 60,
-      "detail": "15 min inrijden · 20 min zo hard als gelijkmatig kan · uitrijden. Stuur je gemiddelde vermogen en hartslag door naar Yannick.",
+      "detail": "15 min inrijden · 20 min zo hard als gelijkmatig kan · uitrijden. Druk aan het begin en eind van de 20 min op de rondeknop; de uitslag wordt automatisch uit je Garmin gehaald.",
       "zone": "Test",
       "key": true
      }
@@ -2952,7 +2952,7 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Looptest",
       "min": 50,
-      "detail": "15 min inlopen · 20 min zo hard als gelijkmatig kan · uitlopen. Stuur je gemiddelde hartslag van de laatste 10 min door naar Yannick.",
+      "detail": "15 min inlopen · 20 min zo hard als gelijkmatig kan · uitlopen. Druk aan het begin en eind van de 20 min op de rondeknop; de uitslag wordt automatisch uit je Garmin gehaald.",
       "zone": "Test",
       "key": true
      }
@@ -2972,7 +2972,7 @@ window.PLAN = {
       "sport": "zwemmen",
       "title": "Zwemtest",
       "min": 50,
-      "detail": "Inzwemmen · 400 m zo snel als gelijkmatig kan · 5 min rust · 200 m zo snel mogelijk. Stuur je tijden door naar Yannick.",
+      "detail": "Inzwemmen · 400 m zo snel als gelijkmatig kan · 5 min rust · 200 m zo snel mogelijk. Druk na elk stuk op de rondeknop van je horloge; de tijden worden daarna automatisch uit je Garmin gehaald.",
       "zone": "Test",
       "key": true
      },
