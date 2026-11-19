@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Op weg naar Hoorn</title>
+<meta http-equiv="Cache-Control" content="no-cache">
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
 <meta name="googlebot" content="noindex, nofollow">
 <meta name="bingbot" content="noindex, nofollow">
@@ -149,7 +150,7 @@ footer{color:var(--muted);font-size:13px;padding:26px 0 40px}
 
 <footer><div class="wrap">Schema opgesteld met Claude op basis van je Garmin-data · bijgewerkt <span id="upd"></span></div></footer>
 
-<script src="data.js"></script>
+<script>document.write('<script src="data.js?v='+Date.now()+'"><\/script>');</script>
 <script>
 (function(){
   const P=window.PLAN,W=P.weken;
