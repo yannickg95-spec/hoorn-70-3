@@ -3,82 +3,155 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Op weg naar Hoorn</title>
+<title>70.3 Hoorn · Op weg naar Hoorn</title>
 <meta http-equiv="Cache-Control" content="no-cache">
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
 <meta name="googlebot" content="noindex, nofollow">
 <meta name="bingbot" content="noindex, nofollow">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏁</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f6f5f1;--card:#fff;--ink:#16191d;--muted:#666d75;--line:#e6e3dd;--accent:#0f4c6b;
-  --zwemmen:#0277bd;--fietsen:#e65100;--lopen:#2e7d32;--kracht:#7b1fa2;--rust:#a0a5ab;--race:#c62828;--info:#b5bac0}
+:root{--bg:#f3f1ec;--card:#fff;--ink:#121820;--muted:#636b74;--line:#e4e0d8;
+  --night:#0a1624;--night2:#11263b;--red:#e3120b;--sea:#0e7490;--accent:#0a1624;
+  --zwemmen:#0284c7;--fietsen:#ea580c;--lopen:#16a34a;--kracht:#7c3aed;--rust:#a0a5ab;--race:#e3120b;--info:#b5bac0;
+  --cond:"Barlow Condensed","Arial Narrow",Arial,sans-serif}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
 .wrap{max-width:720px;margin:0 auto;padding:0 16px}
-header{background:var(--accent);color:#fff;padding:28px 0 22px}
-h1{margin:0;font-size:32px;line-height:1.1;letter-spacing:-.02em}
-header p{margin:6px 0 0;opacity:.85}
-.count{display:inline-block;margin-top:14px;background:rgba(255,255,255,.15);border-radius:99px;padding:5px 14px;font-weight:700}
-.progress{height:6px;background:rgba(255,255,255,.2);border-radius:9px;margin-top:16px;overflow:hidden}
-.progress i{display:block;height:100%;background:#fff;border-radius:9px}
 
-.nav{display:flex;align-items:center;gap:8px;margin:22px 0 4px}
-.nav h2{flex:1;margin:0;font-size:21px;line-height:1.25}
-.nav h2 small{display:block;font-size:14px;font-weight:500;color:var(--muted)}
-button{appearance:none;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:9px 13px;font:inherit;font-size:15px;font-weight:600;color:var(--ink);cursor:pointer}
-button[disabled]{opacity:.3;cursor:default}
-#now{margin:0 0 4px}
+/* ---------- hero ---------- */
+header.hero{position:relative;color:#fff;background:linear-gradient(180deg,#07111c 0%,var(--night) 45%,#0d2c45 100%);overflow:hidden;padding:22px 0 0}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 220px at 85% 10%,rgba(227,18,11,.28),transparent 70%);pointer-events:none}
+.kicker{position:relative;display:flex;align-items:center;gap:10px;font-family:var(--cond);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:13px;color:#cfd8e3}
+.kicker i{display:inline-block;width:26px;height:4px;background:var(--red);border-radius:2px}
+.big{position:relative;display:flex;align-items:flex-end;gap:14px;margin:6px 0 2px}
+.big .num{font-family:var(--cond);font-weight:800;font-size:clamp(84px,24vw,128px);line-height:.82;letter-spacing:-.02em;color:#fff;
+  text-shadow:0 2px 0 rgba(0,0,0,.25)}
+.big .num em{font-style:normal;color:var(--red)}
+.big .place{font-family:var(--cond);font-weight:800;text-transform:uppercase;line-height:.95;padding-bottom:6px}
+.big .place b{display:block;font-size:clamp(30px,8vw,44px);letter-spacing:.02em}
+.big .place span{display:block;font-size:15px;letter-spacing:.12em;color:#9fb3c8;font-weight:700}
+h1{position:relative;margin:10px 0 0;font-size:17px;font-weight:600;color:#cfd8e3}
+
+.clock{position:relative;display:flex;gap:8px;margin:16px 0 0}
+.clock div{background:#05090f;border:1px solid #23384f;border-radius:10px;padding:6px 12px 5px;min-width:78px;text-align:center}
+.clock b{display:block;font-family:var(--cond);font-weight:800;font-size:34px;line-height:1;font-variant-numeric:tabular-nums;color:#fff}
+.clock span{font-family:var(--cond);font-weight:700;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.dist{position:relative;display:flex;gap:6px;flex-wrap:wrap;margin:14px 0 0}
+.dist span{font-family:var(--cond);font-weight:700;font-size:15px;letter-spacing:.04em;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);border-radius:99px;padding:3px 12px}
+
+.course{position:relative;margin:18px 0 0}
+.course .bar{position:relative;display:flex;height:10px;border-radius:99px;overflow:visible;background:#1b3550}
+.course .seg{height:100%}
+.course .seg:first-child{border-radius:99px 0 0 99px}
+.course .seg:last-child{border-radius:0 99px 99px 0}
+.course .me{position:absolute;top:50%;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;background:var(--red);border:3px solid #fff;box-shadow:0 0 0 4px rgba(227,18,11,.3)}
+.course .lab{display:flex;justify-content:space-between;font-family:var(--cond);font-weight:700;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#9fb3c8;margin-top:7px}
+.course p{margin:8px 0 0;font-size:14.5px;color:#dce5ee}
+.skyline{position:relative;display:block;width:100%;height:clamp(110px,18vw,190px);margin-top:4px}
+
+/* ---------- week ---------- */
+.nav{display:flex;align-items:center;gap:8px;margin:24px 0 4px}
+.nav h2{flex:1;margin:0;font-family:var(--cond);font-weight:800;font-size:30px;line-height:1.05;text-transform:uppercase;letter-spacing:.01em}
+.nav h2 .of{color:var(--muted);font-weight:700;font-size:20px}
+.nav h2 small{display:block;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;text-transform:none;letter-spacing:0;font-size:14px;font-weight:500;color:var(--muted);margin-top:2px}
+.nav h2 .ph{display:inline-block;vertical-align:3px;margin-left:6px;font-size:12px;letter-spacing:.1em;padding:2px 8px;border-radius:5px;background:var(--red);color:#fff}
+button{appearance:none;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:9px 13px;font:inherit;font-size:15px;font-weight:700;color:var(--ink);cursor:pointer}
+.nav button{width:44px;height:44px;padding:0;background:var(--night);color:#fff;border-color:var(--night);font-size:18px}
+button[disabled]{opacity:.25;cursor:default}
+#now{margin:2px 0 4px;border-color:var(--red);color:var(--red)}
 .focus{color:var(--muted);margin:6px 0 14px;font-size:15px}
 
-.day{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:8px}
-.day.today{border:2px solid var(--accent)}
+.day{position:relative;display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:8px;overflow:hidden}
+.day.today{border:2px solid var(--red);box-shadow:0 6px 20px rgba(227,18,11,.12)}
+.day.today::before{content:"VANDAAG";position:absolute;top:0;right:0;background:var(--red);color:#fff;font-family:var(--cond);font-weight:800;font-size:12px;letter-spacing:.14em;padding:2px 10px;border-bottom-left-radius:8px}
 .day.past{opacity:.55}
-.date{width:46px;flex:none;text-align:center;line-height:1.15}
-.date b{display:block;font-size:15px}
-.date span{font-size:13px;color:var(--muted)}
-.today .date b{color:var(--accent)}
+.date{width:48px;flex:none;text-align:center;line-height:1}
+.date b{display:block;font-family:var(--cond);font-weight:800;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.date strong{display:block;font-family:var(--cond);font-weight:800;font-size:30px;color:var(--ink);margin-top:2px}
+.date span{display:block;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+.today .date b{color:var(--red)}
 .list{flex:1;min-width:0}
 .s+.s{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}
 .s .t{font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .dot{width:10px;height:10px;border-radius:50%;flex:none;background:var(--c)}
+.ico{font-size:15px;line-height:1}
 .meta{font-weight:500;color:var(--muted);font-size:14px}
 .s p{margin:3px 0 0 18px;font-size:14.5px;color:#3a4048}
 .rust .t,.info .t{font-weight:500;color:var(--muted)}
-.star{color:#d49b00}
-.log{margin-top:10px;border-radius:10px;padding:9px 11px;background:#eef7ee;border-left:4px solid #2e7d32;font-size:14.5px}
-.log.aandacht{background:#fff4e5;border-color:#ef6c00}
+.star{color:#e0a100}
+.s.race{background:linear-gradient(90deg,rgba(227,18,11,.08),transparent);border-radius:10px;padding:8px}
+.log{margin-top:10px;border-radius:10px;padding:9px 11px;background:#eef7ee;border-left:4px solid #16a34a;font-size:14.5px}
+.log.aandacht{background:#fff4e5;border-color:#ea580c}
 .log.gemist{background:#f1f1ef;border-color:#a0a5ab}
-.log.advies{background:#e8f1f8;border-color:#0f4c6b}
+.log.advies{background:#e8f1f8;border-color:var(--night)}
 .adj{margin:0 0 8px;font-size:13.5px;color:#7a4d00;background:#fff6e0;border-radius:8px;padding:5px 9px}
-.log b{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:#3a4048;margin-bottom:2px}
+.log b{display:block;font-family:var(--cond);font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#3a4048;margin-bottom:2px}
 .log ul{margin:2px 0 6px;padding-left:18px}
 .log p{margin:0;color:#2a2f35}
 
 details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin-top:10px}
-summary{font-weight:700;cursor:pointer}
+summary{font-family:var(--cond);font-weight:800;font-size:19px;letter-spacing:.03em;text-transform:uppercase;cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"";width:8px;height:8px;border-right:3px solid var(--red);border-bottom:3px solid var(--red);transform:rotate(-45deg);transition:transform .15s;flex:none}
+details[open]>summary::before{transform:rotate(45deg)}
 details ul{padding-left:20px;margin:10px 0 2px}
 details li{margin:5px 0;font-size:15px}
 table{border-collapse:collapse;width:100%;font-size:15px;margin-top:8px}
 td,th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
 th{font-size:12px;color:var(--muted);font-weight:600}
 .ex{margin:6px 0 0 18px;font-size:14px;background:none;border:0;padding:0}
-.ex summary{font-weight:600;font-size:14px;color:var(--accent)}
+.ex summary{font-family:inherit;font-weight:700;font-size:14px;text-transform:none;letter-spacing:0;color:var(--night)}
+.ex summary::before{width:6px;height:6px;border-width:2px}
 .ex ol{margin:6px 0 0;padding-left:20px}
 .ex li{margin:5px 0}
 .ex li span{display:block;color:var(--muted);font-size:13px}
-.body{display:inline-block;margin:4px 0 0 18px;background:#f3e8f7;color:#5b1677;border-radius:6px;padding:2px 8px;font-size:13px;font-weight:600}
+.body{display:inline-block;margin:4px 0 0 18px;background:#efe9fd;color:#5b21b6;border-radius:6px;padding:2px 8px;font-size:13px;font-weight:600}
 .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin:22px 0 4px}
 .legend span{display:flex;align-items:center;gap:6px}
-footer{color:var(--muted);font-size:13px;padding:26px 0 40px}
+footer{margin-top:34px;background:var(--night);color:#9fb3c8;font-size:13px;padding:0 0 34px}
+footer svg{display:block;width:100%;height:28px;background:var(--bg)}
+footer .wrap{padding-top:14px}
+footer b{font-family:var(--cond);font-size:18px;letter-spacing:.12em;color:#fff;text-transform:uppercase}
 </style>
 </head>
 <body>
-<header><div class="wrap">
-  <h1>Op weg naar Hoorn</h1>
-  <p id="race"></p>
-  <span class="count" id="count"></span>
-  <div class="progress"><i id="bar"></i></div>
-</div></header>
+<header class="hero"><div class="wrap">
+  <div class="kicker"><i></i>IRONMAN 70.3 Westfriesland</div>
+  <div class="big">
+    <div class="num">70<em>.</em>3</div>
+    <div class="place"><b>Hoorn</b><span>zo 20 juni 2027 · 07:00</span></div>
+  </div>
+  <h1>Op weg naar Hoorn: jouw trainingsschema</h1>
+  <div class="clock" id="clock"></div>
+  <div class="dist"><span>🏊 1,9 km</span><span>🚴 90 km</span><span>🏃 21,1 km</span></div>
+  <div class="course">
+    <div class="bar" id="bar"></div>
+    <div class="lab"><span>Start</span><span>Finish 🏁</span></div>
+    <p id="courseTxt"></p>
+  </div>
+</div>
+<svg class="skyline" viewBox="0 0 720 120" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+  <g fill="#0f2f4a">
+    <!-- huizen met trapgevels -->
+    <path d="M0 120V78h22v-8h8v-8h8v8h8v8h18V64l12-14 12 14v14h14V70h6v-6h12v6h6v8h20V60h28v18h16V66l10-10 10 10v12h22v42z"/>
+    <!-- Hoofdtoren -->
+    <path d="M300 120V62h-6l14-14h8V36h10v-8l6-10 6 10v8h10v12h8l14 14h-6v58z"/>
+    <path d="M326 40h12v8h-12z" fill="#e3120b" opacity=".9"/>
+    <!-- meer huizen -->
+    <path d="M388 120V74h16v-8l12-12 12 12v8h18V62h8v-6h14v6h8v12h22V70l10-8 10 8v8h20v-6h8v-6h10v6h8v6h26V64l14-12 14 12v14h20v42z"/>
+    <path d="M640 120V80h80v40z"/>
+  </g>
+  <!-- zeilboten -->
+  <g stroke="#9fb3c8" stroke-width="2" fill="none" opacity=".75">
+    <path d="M180 112V58"/><path d="M180 60l26 44h-26"/><path d="M600 112V64"/><path d="M600 66l-22 38h22"/>
+  </g>
+  <path d="M0 104c40 0 40 8 80 8s40-8 80-8 40 8 80 8 40-8 80-8 40 8 80 8 40-8 80-8 40 8 80 8 40-8 80-8 40 8 80 8v8H0z" fill="#0e7490" opacity=".55"/>
+  <path d="M0 112c30 0 30 6 60 6s30-6 60-6 30 6 60 6 30-6 60-6 30 6 60 6 30-6 60-6 30 6 60 6 30-6 60-6 30 6 60 6 30-6 60-6 30 6 60 6 30-6 60-6v8H0z" fill="#f3f1ec"/>
+</svg>
+</header>
 
 <main class="wrap">
   <div class="nav">
@@ -91,10 +164,10 @@ footer{color:var(--muted);font-size:13px;padding:26px 0 40px}
   <div id="days"></div>
 
   <div class="legend">
-    <span><i class="dot" style="--c:var(--zwemmen)"></i>Zwemmen</span>
-    <span><i class="dot" style="--c:var(--fietsen)"></i>Fietsen</span>
-    <span><i class="dot" style="--c:var(--lopen)"></i>Lopen</span>
-    <span><i class="dot" style="--c:var(--kracht)"></i>Kracht</span>
+    <span>🏊 Zwemmen</span>
+    <span>🚴 Fietsen</span>
+    <span>🏃 Lopen</span>
+    <span>💪 Kracht</span>
     <span><span class="star">★</span>Belangrijkste trainingen</span>
   </div>
 
@@ -148,7 +221,10 @@ footer{color:var(--muted);font-size:13px;padding:26px 0 40px}
   </details>
 </main>
 
-<footer><div class="wrap">Schema opgesteld met Claude op basis van je Garmin-data · bijgewerkt <span id="upd"></span></div></footer>
+<footer>
+<svg viewBox="0 0 720 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14c30 0 30-10 60-10s30 10 60 10 30-10 60-10 30 10 60 10 30-10 60-10 30 10 60 10 30-10 60-10 30 10 60 10 30-10 60-10 30 10 60 10 30-10 60-10 30 10 60 10v14H0z" fill="#0a1624"/></svg>
+<div class="wrap"><b>Hoorn · Markermeer · 20.06.2027</b><br>Schema opgesteld met Claude op basis van je Garmin-data · bijgewerkt <span id="upd"></span></div>
+</footer>
 
 <script>document.write('<script src="data.js?v='+Date.now()+'"><\/script>');</script>
 <script>
@@ -169,11 +245,19 @@ footer{color:var(--muted);font-size:13px;padding:26px 0 40px}
   let cur=W.findIndex(w=>{const s=pd(w.start);return today>=s&&today<add(s,7)});
   if(cur<0)cur=today<pd(W[0].start)?0:W.length-1;
 
-  document.getElementById("race").textContent=P.race.naam+" · zondag "+fmt(race)+" "+race.getFullYear();
   const n=Math.round((race-today)/864e5);
-  document.getElementById("count").textContent=n>1?"Nog "+n+" dagen":n===1?"Morgen!":n===0?"Vandaag! 🏁":"Gefinisht 🏅";
+  const clk=document.getElementById("clock");
+  if(n>0){clk.innerHTML=`<div><b>${n}</b><span>dagen</span></div><div><b>${Math.floor(n/7)}</b><span>weken</span></div><div><b>${W[cur].nr||"S"}</b><span>week</span></div>`;}
+  else clk.innerHTML=`<div style="min-width:0"><b>${n===0?"RACEDAG 🏁":"FINISHER 🏅"}</b><span>${n===0?"zet hem op!":"gefeliciteerd"}</span></div>`;
+  // seizoen als parcours: segmenten naar verwachte racetijd (zwem 1u, fiets 3u45, loop 2u35)
+  const SEG=[["zwemmen",60,"var(--zwemmen)","🏊 Je bent aan het zwemmen: de basis wordt gelegd."],["fietsen",225,"var(--fietsen)","🚴 Je zit op de fiets: kilometers maken."],["lopen",155,"var(--lopen)","🏃 Je bent aan het lopen: op weg naar de finish!"]];
+  const tot=SEG.reduce((a,x)=>a+x[1],0);
   const first=pd(W[0].start);
-  document.getElementById("bar").style.width=Math.min(100,Math.max(2,(today-first)/(race-first)*100))+"%";
+  const frac=Math.min(1,Math.max(0,(today-first)/(race-first)));
+  const bar=document.getElementById("bar");
+  bar.innerHTML=SEG.map(x=>`<div class="seg" style="width:${x[1]/tot*100}%;background:${x[2]}"></div>`).join("")+`<i class="me" style="left:${Math.max(1.5,frac*100)}%"></i>`;
+  let acc=0,seg=SEG[0];for(const x of SEG){if(frac*tot>=acc)seg=x;acc+=x[1];}
+  document.getElementById("courseTxt").textContent=(n<0?"🏅 Finished!":seg[3])+" ("+Math.round(frac*100)+"% van je seizoen)";
   document.getElementById("upd").textContent=fmt(pd(P.bijgewerkt))+" "+pd(P.bijgewerkt).getFullYear();
 
   let i=cur;
@@ -181,7 +265,8 @@ footer{color:var(--muted);font-size:13px;padding:26px 0 40px}
     i=Math.max(0,Math.min(W.length-1,k));
     const w=W[i],s=pd(w.start);
     const tot=w.totaal?" · "+dur(w.totaal):"";
-    document.getElementById("title").innerHTML=(w.nr?"Week "+w.nr+" <span style='color:var(--muted);font-weight:500'>van "+(W.length-1)+"</span>":"Startweek")+
+    const ph=P.fases[w.fase]?P.fases[w.fase].naam:"";
+    document.getElementById("title").innerHTML=(w.nr?"Week "+w.nr+" <span class='of'>/ "+(W.length-1)+"</span>":"Startweek")+(ph?`<span class="ph">${esc(ph)}</span>`:"")+
       "<small>"+fmt(s)+" – "+fmt(add(s,6))+(w.nr?" · "+esc(w.label):"")+tot+"</small>";
     document.getElementById("focus").textContent=w.focus||"";
     document.getElementById("prev").disabled=i===0;
@@ -194,15 +279,16 @@ footer{color:var(--muted);font-size:13px;padding:26px 0 40px}
       if(!ss.length&&!lg)return;
       const el=document.createElement("div");
       el.className="day"+(same(dt,today)?" today":"")+(dt<today&&!lg?" past":"");
-      let h=`<div class="date"><b>${same(dt,today)?"Nu":DAG[d]}</b><span>${fmt(dt)}</span></div><div class="list">`;
+      let h=`<div class="date"><b>${DAG[d]}</b><strong>${dt.getDate()}</strong><span>${MND[dt.getMonth()]}</span></div><div class="list">`;
       const aj=(w.aangepast||{})[String(d)];
       if(aj!==undefined)h+=`<div class="adj">✏️ Aangepast${aj?": "+esc(aj):""}</div>`;
       ss.forEach(x=>{
         const m=[dur(x.min),x.zone].filter(Boolean).join(" · ");
-        const body=x.lichaam?`<span class="body">💪 ${esc(x.lichaam)}</span>`:"";
+        const body=x.lichaam?`<span class="body">${esc(x.lichaam)}</span>`:"";
         const ex=(x.oefeningen||[]).length?`<details class="ex"><summary>Bekijk de ${x.oefeningen.length} oefeningen</summary><ol>${x.oefeningen.map(o=>`<li><b>${esc(o.naam)}</b> · ${esc(o.sets)}<span>${esc(o.spieren)}</span></li>`).join("")}</ol></details>`:"";
         const title=x.lichaam?x.title.split(":")[0]:x.title;
-        h+=`<div class="s ${x.sport}" style="--c:${C[x.sport]}"><div class="t"><i class="dot"></i>${esc(title)}${x.key?' <span class="star">★</span>':""}${m?` <span class="meta">${esc(m)}</span>`:""}</div>${body}${x.detail?`<p>${esc(x.detail)}</p>`:""}${ex}</div>`;
+        const ic={zwemmen:"🏊",fietsen:"🚴",lopen:"🏃",kracht:"💪",race:"🏁"}[x.sport];
+        h+=`<div class="s ${x.sport}" style="--c:${C[x.sport]}"><div class="t">${ic?`<span class="ico">${ic}</span>`:'<i class="dot"></i>'}${esc(title)}${x.key?' <span class="star">★</span>':""}${m?` <span class="meta">${esc(m)}</span>`:""}</div>${body}${x.detail?`<p>${esc(x.detail)}</p>`:""}${ex}</div>`;
       });
       if(lg){
         const lab={goed:"✓ Gedaan · goed",aandacht:"✓ Gedaan · let op",gemist:"Niet gedaan",advies:"Advies voor vandaag"}[lg.oordeel]||"✓ Gedaan";
