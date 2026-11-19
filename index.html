@@ -249,7 +249,7 @@ footer b{font-family:var(--cond);font-size:18px;letter-spacing:.12em;color:#fff;
 
   const n=Math.round((race-today)/864e5);
   const clk=document.getElementById("clock");
-  if(n>0){clk.innerHTML=`<div><b>${n}</b><span>dagen</span></div><div><b>${Math.floor(n/7)}</b><span>weken</span></div><div><b>${W[cur].nr||"S"}</b><span>week</span></div>`;}
+  if(n>0){clk.innerHTML=`<div><b>${n}</b><span>dagen</span></div><div><b>${Math.floor(n/7)}</b><span>weken</span></div><div><b>${W[cur].nr}</b><span>${W[cur].nr?"week /"+(W.length-1):"startweek"}</span></div>`;}
   else clk.innerHTML=`<div style="min-width:0"><b>${n===0?"RACEDAG 🏁":"FINISHER 🏅"}</b><span>${n===0?"zet hem op!":"gefeliciteerd"}</span></div>`;
   // seizoen als parcours: segmenten naar verwachte racetijd (zwem 1u, fiets 3u45, loop 2u35)
   const SEG=[["zwemmen",60,"var(--zwemmen)","🏊 Je zwemt: basis leggen"],["fietsen",225,"var(--fietsen)","🚴 Je fietst: kilometers maken"],["lopen",155,"var(--lopen)","🏃 Je loopt: op naar de finish"]];
