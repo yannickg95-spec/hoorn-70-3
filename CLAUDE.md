@@ -6,6 +6,7 @@ Statische GitHub Pages-site (branch `main`, root) met een 30-weken trainingssche
 - `index.html`: de site (vanilla HTML/JS, leest `data.js`).
 - `data.js`: **gegenereerd**, niet met de hand aanpassen.
 - `tools/generate.py`: het schema (weekopzet, sessies, kracht A/B). Schrijft `data.js`.
+- `tools/aanpassingen.json`: aanpassingen op het schema per datum (zie hieronder). Hiermee worden trainingen getweakt zonder `generate.py` te wijzigen.
 - `tools/logboek.json`: per datum (`YYYY-MM-DD`) wat er gedaan is plus feedback. Dit is het bestand dat de dagelijkse update bijwerkt.
 
 Na elke wijziging: `python3 tools/generate.py`, commit en push naar `main`.
@@ -21,6 +22,30 @@ Na elke wijziging: `python3 tools/generate.py`, commit en push naar `main`.
 - `sport`: zwemmen, fietsen, lopen, kracht, of iets anders.
 - `goed` = volgens plan / juiste intensiteit. `aandacht` = gedaan, maar te hard, te lang of op een rustdag. `gemist` = geplande training niet gedaan (geen `gedaan`-items). `advies` = alleen voor vandaag: advies op basis van readiness/HRV (geen `gedaan`-items nodig).
 - Eén entry per datum. Bestaat de datum al, vul dan aan (niet dubbel).
+
+## Trainingen aanpassen
+De coach (Claude) mag en moet het schema bijsturen als de data daarom vraagt. Kleine of tijdelijke aanpassingen gaan via `tools/aanpassingen.json`. Die vervangen de sessies van één dag volledig:
+```json
+"2026-11-24": {
+  "reden": "Korte uitleg in de je-vorm, zichtbaar op de site",
+  "sessies": [
+    {"sport": "fietsen", "title": "Tacx rustig", "min": 45, "detail": "45 min rustig, cadans 85–95.", "zone": "Z1–Z2", "key": false},
+    {"ref": "krachtA", "fase": "basis1", "soort": "herstel"},
+    {"ref": "rust", "detail": "Volledige rust."}
+  ]
+}
+```
+`ref` kan `krachtA`, `krachtB` of `rust` zijn (`fase`: reset/basis1/basis2/opbouw/specifiek/taper, `soort`: opbouw/herstel).
+
+Wanneer aanpassen (richtlijnen):
+- Readiness < 25 of hersteltijd > 48 u op een ★-dag: ★-training van vandaag/morgen omzetten naar rustig of rust.
+- 2+ keer achter elkaar te hard op rustige trainingen: komende rustige sessies korter maken en de hartslaggrens herhalen.
+- Gemiste trainingen: niet inhalen. Bij 3+ gemiste trainingen in een week: de volgende week ~15% lichter maken.
+- Signalen van overbelasting (meerdere dagen lage readiness/HRV onder baseline, pijn): volume verlagen of een herstelweek naar voren halen.
+- Gaat het structureel makkelijker dan gepland (zones goed, readiness hoog): lichte verzwaring mag (max ~10% per week).
+- Testresultaten (week 2, 9, 17): zones/tempo's in teksten, `CLAUDE.md` en `index.html` bijwerken.
+- Structurele wijzigingen voor meerdere weken mogen in `tools/generate.py`, maar alleen met duidelijke reden in commit en samenvatting aan Yannick.
+- De racedatum, de weekindeling (ma zwem+kracht, di fiets, wo lopen, do rust, vr zwem+kracht, za fiets, zo lopen) en het verleden (data vóór vandaag) niet wijzigen.
 
 ## Schrijfstijl
 - Nederlands, spreek de atleet aan met **je**. Kort: 1–3 zinnen. Eerlijk maar bemoedigend.

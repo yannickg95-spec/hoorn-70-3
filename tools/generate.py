@@ -229,6 +229,32 @@ week0 = {"nr": 0, "start": (WEEK1 - timedelta(weeks=1)).isoformat(), "fase": "re
 weeks = [week0] + [build(i, c) for i, c in enumerate(W)]
 assert date.fromisoformat(weeks[-1]["start"]) + timedelta(days=6) == RACE
 
+# ---------- aanpassingen (overrides per datum) ----------
+ADJ_PATH = os.path.join(HERE, "aanpassingen.json")
+ADJ = json.load(open(ADJ_PATH, encoding="utf-8")) if os.path.exists(ADJ_PATH) else {}
+
+def expand(sess):
+    ref = sess.get("ref")
+    if ref in ("krachtA", "krachtB"):
+        phase = sess.get("fase", "basis1")
+        return kracht(phase, 0 if ref == "krachtA" else 4, sess.get("soort", "opbouw"))
+    if ref == "rust":
+        return S("rust", "Rust", 0, sess.get("detail", ""))
+    return S(sess["sport"], sess["title"], int(sess.get("min", 0)), sess.get("detail", ""), sess.get("zone", ""), bool(sess.get("key", False)))
+
+for ds, adj in ADJ.items():
+    dt = date.fromisoformat(ds)
+    for w in weeks:
+        start = date.fromisoformat(w["start"])
+        if start <= dt < start + timedelta(days=7):
+            di = (dt - start).days
+            w["dagen"][di] = [expand(x) for x in adj["sessies"]]
+            w.setdefault("aangepast", {})[str(di)] = adj.get("reden", "")
+            w["totaal"] = sum(x["min"] for d in w["dagen"] for x in d)
+            break
+    else:
+        raise SystemExit(f"aanpassing {ds} valt buiten het schema")
+
 LOG = json.load(open(os.path.join(HERE, "logboek.json"), encoding="utf-8"))
 data = {"logboek": LOG, "race": {"naam": "IRONMAN 70.3 Westfriesland", "plaats": "Hoorn", "datum": RACE.isoformat(), "start": "07:00"},
         "fases": PHASES, "weken": weeks, "bijgewerkt": date.today().isoformat()}

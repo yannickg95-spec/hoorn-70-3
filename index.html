@@ -48,6 +48,7 @@ button[disabled]{opacity:.3;cursor:default}
 .log.aandacht{background:#fff4e5;border-color:#ef6c00}
 .log.gemist{background:#f1f1ef;border-color:#a0a5ab}
 .log.advies{background:#e8f1f8;border-color:#0f4c6b}
+.adj{margin:0 0 8px;font-size:13.5px;color:#7a4d00;background:#fff6e0;border-radius:8px;padding:5px 9px}
 .log b{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:#3a4048;margin-bottom:2px}
 .log ul{margin:2px 0 6px;padding-left:18px}
 .log p{margin:0;color:#2a2f35}
@@ -193,6 +194,8 @@ footer{color:var(--muted);font-size:13px;padding:26px 0 40px}
       const el=document.createElement("div");
       el.className="day"+(same(dt,today)?" today":"")+(dt<today&&!lg?" past":"");
       let h=`<div class="date"><b>${same(dt,today)?"Nu":DAG[d]}</b><span>${fmt(dt)}</span></div><div class="list">`;
+      const aj=(w.aangepast||{})[String(d)];
+      if(aj!==undefined)h+=`<div class="adj">✏️ Aangepast${aj?": "+esc(aj):""}</div>`;
       ss.forEach(x=>{
         const m=[dur(x.min),x.zone].filter(Boolean).join(" · ");
         const body=x.lichaam?`<span class="body">💪 ${esc(x.lichaam)}</span>`:"";
