@@ -32,7 +32,7 @@ window.PLAN = {
     }
    ],
    "oordeel": "aandacht",
-   "feedback": "Het eerste half uur was mooi rustig (Z2). In het tweede half uur ging de hartslag naar 154 (Z3). Op een dag met Readiness 7/100 en nog ruim 2 dagen hersteltijd had dat rustig moeten blijven. De rest van vandaag: rust."
+   "feedback": "Het eerste half uur was mooi rustig (hartslag 139, Z2). In het tweede half uur ging de hartslag naar 154, en dat is op de fiets al zwaar (Z4). Op een dag met Readiness 7/100 en nog ruim 2 dagen hersteltijd had dat rustig moeten blijven. De rest van vandaag: rust."
   }
  },
  "race": {
@@ -114,8 +114,8 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Hardlopen rustig",
       "min": 45,
-      "detail": "45 min rustig, hartslag onder 140.",
-      "zone": "Z2",
+      "detail": "45 min rustig, hartslag onder 150.",
+      "zone": "Z1–Z2",
       "key": false
      }
     ]
@@ -127,7 +127,7 @@ window.PLAN = {
    "fase": "reset",
    "label": "Rustig starten",
    "focus": "Rustig beginnen: de afgelopen weken waren zwaar.",
-   "totaal": 360,
+   "totaal": 350,
    "dagen": [
     [
      {
@@ -140,11 +140,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
-      "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "title": "Kracht A: Benen, billen, heupen & buik",
+      "min": 25,
+      "detail": "Herstelweek: 2 sets per oefening, licht gewicht. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -162,8 +200,8 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Hardlopen rustig",
       "min": 35,
-      "detail": "35 min rustig, hartslag onder 140.",
-      "zone": "Z2",
+      "detail": "35 min rustig, hartslag onder 150.",
+      "zone": "Z1–Z2",
       "key": false
      }
     ],
@@ -188,11 +226,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
-      "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "title": "Kracht B: Rug, schouders, armen & romp",
+      "min": 25,
+      "detail": "Herstelweek: 2 sets per oefening, licht gewicht. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -209,9 +285,9 @@ window.PLAN = {
      {
       "sport": "lopen",
       "title": "Duurloop rustig",
-      "min": 50,
-      "detail": "50 min rustig, hartslag onder 140.",
-      "zone": "Z2",
+      "min": 60,
+      "detail": "60 min rustig, hartslag onder 150.",
+      "zone": "Z1–Z2",
       "key": false
      }
     ]
@@ -222,7 +298,7 @@ window.PLAN = {
    "start": "2026-11-30",
    "fase": "basis1",
    "label": "Opbouwweek",
-   "focus": "Aerobe basis: vooral rustig, twee tempotrainingen.",
+   "focus": "Aerobe basis. Vrijdag een zwemtest: daarmee bepalen we haar zwemtempo's.",
    "totaal": 410,
    "dagen": [
     [
@@ -230,17 +306,55 @@ window.PLAN = {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 55,
-      "detail": "1600 m: 300 inzwemmen · 6×50 drills · 900 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "1600 m: 300 inzwemmen · 6×50 drills · 900 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -276,19 +390,57 @@ window.PLAN = {
     [
      {
       "sport": "zwemmen",
-      "title": "Zwemmen duur",
-      "min": 55,
-      "detail": "1600 m: 300 in · 10×100 m gelijkmatig (15 s rust) · 300 uit.",
-      "zone": "Z2",
-      "key": false
+      "title": "Zwemtest",
+      "min": 50,
+      "detail": "Inzwemmen · 400 m zo snel als gelijkmatig kan · 5 min rust · 200 m zo snel mogelijk. Tijden doorsturen.",
+      "zone": "Test",
+      "key": true
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -305,8 +457,8 @@ window.PLAN = {
      {
       "sport": "lopen",
       "title": "Duurloop",
-      "min": 65,
-      "detail": "1u05 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "min": 70,
+      "detail": "1u10 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -319,24 +471,62 @@ window.PLAN = {
    "fase": "basis1",
    "label": "Opbouwweek",
    "focus": "",
-   "totaal": 440,
+   "totaal": 445,
    "dagen": [
     [
      {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 55,
-      "detail": "1700 m: 300 inzwemmen · 6×50 drills · 1000 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "1700 m: 300 inzwemmen · 6×50 drills · 1000 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -380,11 +570,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -401,8 +629,8 @@ window.PLAN = {
      {
       "sport": "lopen",
       "title": "Duurloop",
-      "min": 70,
-      "detail": "1u10 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "min": 75,
+      "detail": "1u15 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -415,24 +643,62 @@ window.PLAN = {
    "fase": "basis1",
    "label": "Opbouwweek",
    "focus": "",
-   "totaal": 475,
+   "totaal": 480,
    "dagen": [
     [
      {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 60,
-      "detail": "1800 m: 300 inzwemmen · 6×50 drills · 1100 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "1800 m: 300 inzwemmen · 6×50 drills · 1100 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -476,11 +742,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -497,8 +801,8 @@ window.PLAN = {
      {
       "sport": "lopen",
       "title": "Duurloop",
-      "min": 75,
-      "detail": "1u15 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "min": 80,
+      "detail": "1u20 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -511,7 +815,7 @@ window.PLAN = {
    "fase": "basis1",
    "label": "Herstelweek",
    "focus": "Kerstweek = herstelweek. Dagen schuiven mag.",
-   "totaal": 355,
+   "totaal": 335,
    "dagen": [
     [
      {
@@ -524,11 +828,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
-      "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "title": "Kracht A: Benen, billen, heupen & buik",
+      "min": 25,
+      "detail": "Herstelweek: 2 sets per oefening, licht gewicht. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -546,8 +888,8 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Hardlopen rustig",
       "min": 35,
-      "detail": "35 min rustig, hartslag onder 140.",
-      "zone": "Z2",
+      "detail": "35 min rustig, hartslag onder 150.",
+      "zone": "Z1–Z2",
       "key": false
      }
     ],
@@ -572,11 +914,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
-      "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "title": "Kracht B: Rug, schouders, armen & romp",
+      "min": 25,
+      "detail": "Herstelweek: 2 sets per oefening, licht gewicht. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -594,8 +974,8 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Duurloop rustig",
       "min": 55,
-      "detail": "55 min rustig, hartslag onder 140.",
-      "zone": "Z2",
+      "detail": "55 min rustig, hartslag onder 150.",
+      "zone": "Z1–Z2",
       "key": false
      }
     ]
@@ -607,24 +987,62 @@ window.PLAN = {
    "fase": "basis1",
    "label": "Opbouwweek",
    "focus": "",
-   "totaal": 475,
+   "totaal": 480,
    "dagen": [
     [
      {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 60,
-      "detail": "1800 m: 300 inzwemmen · 6×50 drills · 1100 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "1800 m: 300 inzwemmen · 6×50 drills · 1100 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -668,11 +1086,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -689,8 +1145,8 @@ window.PLAN = {
      {
       "sport": "lopen",
       "title": "Duurloop",
-      "min": 75,
-      "detail": "1u15 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "min": 80,
+      "detail": "1u20 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -703,24 +1159,62 @@ window.PLAN = {
    "fase": "basis1",
    "label": "Opbouwweek",
    "focus": "",
-   "totaal": 510,
+   "totaal": 515,
    "dagen": [
     [
      {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 65,
-      "detail": "1900 m: 300 inzwemmen · 6×50 drills · 1200 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "1900 m: 300 inzwemmen · 6×50 drills · 1200 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -764,11 +1258,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -785,8 +1317,8 @@ window.PLAN = {
      {
       "sport": "lopen",
       "title": "Duurloop",
-      "min": 80,
-      "detail": "1u20 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "min": 85,
+      "detail": "1u25 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -799,24 +1331,62 @@ window.PLAN = {
    "fase": "basis1",
    "label": "Opbouwweek",
    "focus": "",
-   "totaal": 520,
+   "totaal": 525,
    "dagen": [
     [
      {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 65,
-      "detail": "2000 m: 300 inzwemmen · 6×50 drills · 1300 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2000 m: 300 inzwemmen · 6×50 drills · 1300 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -860,11 +1430,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -881,8 +1489,8 @@ window.PLAN = {
      {
       "sport": "lopen",
       "title": "Duurloop",
-      "min": 85,
-      "detail": "1u25 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "min": 90,
+      "detail": "1u30 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -895,7 +1503,7 @@ window.PLAN = {
    "fase": "basis1",
    "label": "Testweek",
    "focus": "Testweek: di fietsen, wo lopen, vr zwemmen.",
-   "totaal": 420,
+   "totaal": 400,
    "dagen": [
     [
      {
@@ -908,11 +1516,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
-      "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "title": "Kracht A: Benen, billen, heupen & buik",
+      "min": 25,
+      "detail": "Herstelweek: 2 sets per oefening, licht gewicht. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -956,11 +1602,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
-      "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "title": "Kracht B: Rug, schouders, armen & romp",
+      "min": 25,
+      "detail": "Herstelweek: 2 sets per oefening, licht gewicht. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -978,7 +1662,7 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Duurloop",
       "min": 60,
-      "detail": "1 uur rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "detail": "1 uur rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -991,24 +1675,62 @@ window.PLAN = {
    "fase": "basis2",
    "label": "Opbouwweek",
    "focus": "Blok 2: meer tempo.",
-   "totaal": 515,
+   "totaal": 520,
    "dagen": [
     [
      {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 65,
-      "detail": "2000 m: 300 inzwemmen · 6×50 drills · 1300 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2000 m: 300 inzwemmen · 6×50 drills · 1300 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1052,11 +1774,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1073,8 +1833,8 @@ window.PLAN = {
      {
       "sport": "lopen",
       "title": "Duurloop",
-      "min": 85,
-      "detail": "1u25 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "min": 90,
+      "detail": "1u30 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -1087,24 +1847,62 @@ window.PLAN = {
    "fase": "basis2",
    "label": "Opbouwweek",
    "focus": "",
-   "totaal": 560,
+   "totaal": 565,
    "dagen": [
     [
      {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 70,
-      "detail": "2100 m: 300 inzwemmen · 6×50 drills · 1400 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2100 m: 300 inzwemmen · 6×50 drills · 1400 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1148,11 +1946,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1169,8 +2005,8 @@ window.PLAN = {
      {
       "sport": "lopen",
       "title": "Duurloop",
-      "min": 90,
-      "detail": "1u30 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "min": 95,
+      "detail": "1u35 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -1183,24 +2019,62 @@ window.PLAN = {
    "fase": "basis2",
    "label": "Opbouwweek",
    "focus": "",
-   "totaal": 595,
+   "totaal": 600,
    "dagen": [
     [
      {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 75,
-      "detail": "2200 m: 300 inzwemmen · 6×50 drills · 1500 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2200 m: 300 inzwemmen · 6×50 drills · 1500 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1244,11 +2118,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1265,8 +2177,8 @@ window.PLAN = {
      {
       "sport": "lopen",
       "title": "Duurloop",
-      "min": 95,
-      "detail": "1u35 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "min": 100,
+      "detail": "1u40 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -1279,7 +2191,7 @@ window.PLAN = {
    "fase": "basis2",
    "label": "Herstelweek",
    "focus": "Herstelweek.",
-   "totaal": 410,
+   "totaal": 390,
    "dagen": [
     [
      {
@@ -1292,11 +2204,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
-      "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "title": "Kracht A: Benen, billen, heupen & buik",
+      "min": 25,
+      "detail": "Herstelweek: 2 sets per oefening, licht gewicht. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1314,8 +2264,8 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Hardlopen rustig",
       "min": 40,
-      "detail": "40 min rustig, hartslag onder 140.",
-      "zone": "Z2",
+      "detail": "40 min rustig, hartslag onder 150.",
+      "zone": "Z1–Z2",
       "key": false
      }
     ],
@@ -1340,11 +2290,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
-      "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "title": "Kracht B: Rug, schouders, armen & romp",
+      "min": 25,
+      "detail": "Herstelweek: 2 sets per oefening, licht gewicht. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1362,8 +2350,8 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Duurloop rustig",
       "min": 60,
-      "detail": "60 min rustig, hartslag onder 140.",
-      "zone": "Z2",
+      "detail": "60 min rustig, hartslag onder 150.",
+      "zone": "Z1–Z2",
       "key": false
      }
     ]
@@ -1375,24 +2363,62 @@ window.PLAN = {
    "fase": "basis2",
    "label": "Opbouwweek",
    "focus": "",
-   "totaal": 595,
+   "totaal": 600,
    "dagen": [
     [
      {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 75,
-      "detail": "2200 m: 300 inzwemmen · 6×50 drills · 1500 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2200 m: 300 inzwemmen · 6×50 drills · 1500 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1436,11 +2462,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1457,8 +2521,8 @@ window.PLAN = {
      {
       "sport": "lopen",
       "title": "Duurloop",
-      "min": 95,
-      "detail": "1u35 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "min": 100,
+      "detail": "1u40 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -1471,24 +2535,62 @@ window.PLAN = {
    "fase": "basis2",
    "label": "Opbouwweek",
    "focus": "",
-   "totaal": 620,
+   "totaal": 625,
    "dagen": [
     [
      {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 75,
-      "detail": "2300 m: 300 inzwemmen · 6×50 drills · 1600 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2300 m: 300 inzwemmen · 6×50 drills · 1600 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1532,11 +2634,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1553,8 +2693,8 @@ window.PLAN = {
      {
       "sport": "lopen",
       "title": "Duurloop",
-      "min": 100,
-      "detail": "1u40 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "min": 105,
+      "detail": "1u45 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -1567,24 +2707,62 @@ window.PLAN = {
    "fase": "basis2",
    "label": "Opbouwweek",
    "focus": "Eerste rit van 3 uur.",
-   "totaal": 650,
+   "totaal": 655,
    "dagen": [
     [
      {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 80,
-      "detail": "2400 m: 300 inzwemmen · 6×50 drills · 1700 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2400 m: 300 inzwemmen · 6×50 drills · 1700 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1628,11 +2806,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1649,8 +2865,8 @@ window.PLAN = {
      {
       "sport": "lopen",
       "title": "Duurloop",
-      "min": 100,
-      "detail": "1u40 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "min": 105,
+      "detail": "1u45 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -1663,7 +2879,7 @@ window.PLAN = {
    "fase": "basis2",
    "label": "Testweek",
    "focus": "Testweek: vergelijk met week 9.",
-   "totaal": 445,
+   "totaal": 425,
    "dagen": [
     [
      {
@@ -1676,11 +2892,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
-      "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "title": "Kracht A: Benen, billen, heupen & buik",
+      "min": 25,
+      "detail": "Herstelweek: 2 sets per oefening, licht gewicht. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1724,11 +2978,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht",
-      "min": 35,
-      "detail": "Benen, billen, core en schouders.",
+      "title": "Kracht B: Rug, schouders, armen & romp",
+      "min": 25,
+      "detail": "Herstelweek: 2 sets per oefening, licht gewicht. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1746,7 +3038,7 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Duurloop",
       "min": 65,
-      "detail": "1u05 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "detail": "1u05 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -1766,17 +3058,55 @@ window.PLAN = {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 75,
-      "detail": "2300 m: 300 inzwemmen · 6×50 drills · 1600 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2300 m: 300 inzwemmen · 6×50 drills · 1600 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Onderhoud: 2 sets per oefening, iets zwaarder gewicht en wat minder herhalingen. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1820,11 +3150,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Onderhoud: 2 sets per oefening, iets zwaarder gewicht en wat minder herhalingen. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1850,7 +3218,7 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Duurloop",
       "min": 100,
-      "detail": "1u40 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "detail": "1u40 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -1870,17 +3238,55 @@ window.PLAN = {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 80,
-      "detail": "2400 m: 300 inzwemmen · 6×50 drills · 1700 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2400 m: 300 inzwemmen · 6×50 drills · 1700 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Onderhoud: 2 sets per oefening, iets zwaarder gewicht en wat minder herhalingen. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1924,11 +3330,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Onderhoud: 2 sets per oefening, iets zwaarder gewicht en wat minder herhalingen. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -1967,24 +3411,62 @@ window.PLAN = {
    "fase": "opbouw",
    "label": "Opbouwweek",
    "focus": "",
-   "totaal": 680,
+   "totaal": 685,
    "dagen": [
     [
      {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 80,
-      "detail": "2500 m: 300 inzwemmen · 6×50 drills · 1800 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2500 m: 300 inzwemmen · 6×50 drills · 1800 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Onderhoud: 2 sets per oefening, iets zwaarder gewicht en wat minder herhalingen. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -2028,11 +3510,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Onderhoud: 2 sets per oefening, iets zwaarder gewicht en wat minder herhalingen. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -2057,8 +3577,8 @@ window.PLAN = {
      {
       "sport": "lopen",
       "title": "Duurloop",
-      "min": 105,
-      "detail": "1u45 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "min": 110,
+      "detail": "1u50 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -2084,11 +3604,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Herstelweek: 2 sets per oefening, licht gewicht. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -2106,8 +3664,8 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Hardlopen rustig",
       "min": 45,
-      "detail": "45 min rustig, hartslag onder 140.",
-      "zone": "Z2",
+      "detail": "45 min rustig, hartslag onder 150.",
+      "zone": "Z1–Z2",
       "key": false
      }
     ],
@@ -2132,11 +3690,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Herstelweek: 2 sets per oefening, licht gewicht. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -2154,8 +3750,8 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Duurloop rustig",
       "min": 70,
-      "detail": "70 min rustig, hartslag onder 140.",
-      "zone": "Z2",
+      "detail": "70 min rustig, hartslag onder 150.",
+      "zone": "Z1–Z2",
       "key": false
      }
     ]
@@ -2174,17 +3770,55 @@ window.PLAN = {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 80,
-      "detail": "2500 m: 300 inzwemmen · 6×50 drills · 1800 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2500 m: 300 inzwemmen · 6×50 drills · 1800 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Onderhoud: 2 sets per oefening, iets zwaarder gewicht en wat minder herhalingen. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -2228,11 +3862,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Onderhoud: 2 sets per oefening, iets zwaarder gewicht en wat minder herhalingen. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -2258,7 +3930,7 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Duurloop",
       "min": 105,
-      "detail": "1u45 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "detail": "1u45 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -2278,17 +3950,55 @@ window.PLAN = {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 85,
-      "detail": "2600 m: 300 inzwemmen · 6×50 drills · 1900 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2600 m: 300 inzwemmen · 6×50 drills · 1900 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Onderhoud: 2 sets per oefening, iets zwaarder gewicht en wat minder herhalingen. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -2332,11 +4042,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Onderhoud: 2 sets per oefening, iets zwaarder gewicht en wat minder herhalingen. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -2375,24 +4123,62 @@ window.PLAN = {
    "fase": "opbouw",
    "label": "Opbouwweek",
    "focus": "",
-   "totaal": 740,
+   "totaal": 745,
    "dagen": [
     [
      {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 85,
-      "detail": "2600 m: 300 inzwemmen · 6×50 drills · 1900 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2600 m: 300 inzwemmen · 6×50 drills · 1900 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Onderhoud: 2 sets per oefening, iets zwaarder gewicht en wat minder herhalingen. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -2436,11 +4222,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Onderhoud: 2 sets per oefening, iets zwaarder gewicht en wat minder herhalingen. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -2465,8 +4289,8 @@ window.PLAN = {
      {
       "sport": "lopen",
       "title": "Duurloop",
-      "min": 110,
-      "detail": "1u50 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "min": 115,
+      "detail": "1u55 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -2492,11 +4316,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Herstelweek: 2 sets per oefening, licht gewicht. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -2514,8 +4376,8 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Hardlopen rustig",
       "min": 45,
-      "detail": "45 min rustig, hartslag onder 140.",
-      "zone": "Z2",
+      "detail": "45 min rustig, hartslag onder 150.",
+      "zone": "Z1–Z2",
       "key": false
      }
     ],
@@ -2540,11 +4402,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Herstelweek: 2 sets per oefening, licht gewicht. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -2562,8 +4462,8 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Duurloop rustig",
       "min": 70,
-      "detail": "70 min rustig, hartslag onder 140.",
-      "zone": "Z2",
+      "detail": "70 min rustig, hartslag onder 150.",
+      "zone": "Z1–Z2",
       "key": false
      }
     ]
@@ -2582,17 +4482,55 @@ window.PLAN = {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 80,
-      "detail": "2500 m: 300 inzwemmen · 6×50 drills · 1800 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2500 m: 300 inzwemmen · 6×50 drills · 1800 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Onderhoud: 2 sets per oefening, iets zwaarder gewicht en wat minder herhalingen. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -2636,11 +4574,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Onderhoud: 2 sets per oefening, iets zwaarder gewicht en wat minder herhalingen. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -2666,7 +4642,7 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Duurloop",
       "min": 100,
-      "detail": "1u40 rustig, hartslag onder 145. Liever te langzaam dan te snel.",
+      "detail": "1u40 rustig: hartslag 135–150, ongeveer 6:45–7:15/km. Liever te langzaam dan te snel.",
       "zone": "Z2",
       "key": true
      }
@@ -2686,17 +4662,55 @@ window.PLAN = {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 85,
-      "detail": "2600 m: 300 inzwemmen · 6×50 drills · 1900 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2600 m: 300 inzwemmen · 6×50 drills · 1900 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht A: Benen, billen, heupen & buik",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Onderhoud: 2 sets per oefening, iets zwaarder gewicht en wat minder herhalingen. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Benen, billen, heupen & buik",
+      "oefeningen": [
+       {
+        "naam": "Goblet squat (dumbbell voor de borst)",
+        "spieren": "Voorkant bovenbenen, billen",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Roemeense deadlift met dumbbells",
+        "spieren": "Achterkant bovenbenen (hamstrings), billen, onderrug",
+        "sets": "3×10"
+       },
+       {
+        "naam": "Step-up op een bankje",
+        "spieren": "Bovenbenen, billen, balans",
+        "sets": "3×8 per been"
+       },
+       {
+        "naam": "Bruggetje op één been",
+        "spieren": "Billen, hamstrings",
+        "sets": "3×10 per been"
+       },
+       {
+        "naam": "Kuitheffen op één been (langzaam zakken)",
+        "spieren": "Kuiten, achillespees",
+        "sets": "3×12 per been"
+       },
+       {
+        "naam": "Zijplank met bovenste been heffen",
+        "spieren": "Zijkant heup/bil, schuine buikspieren",
+        "sets": "3×8 per kant"
+       },
+       {
+        "naam": "Dead bug",
+        "spieren": "Diepe buikspieren",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -2740,11 +4754,49 @@ window.PLAN = {
      },
      {
       "sport": "kracht",
-      "title": "Kracht kort",
+      "title": "Kracht B: Rug, schouders, armen & romp",
       "min": 25,
-      "detail": "Squats, lunges, kuitheffen, plank. 2 sets.",
+      "detail": "Onderhoud: 2 sets per oefening, iets zwaarder gewicht en wat minder herhalingen. Een sterke rug en stabiele schouders geven kracht in de zwemslag en voorkomen schouderblessures. Een sterke romp houdt je houding goed op de fiets en tijdens het lopen.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Rug, schouders, armen & romp",
+      "oefeningen": [
+       {
+        "naam": "Roeien met dumbbell (één arm, steunend op bank)",
+        "spieren": "Brede rugspier, achterkant schouder",
+        "sets": "3×10 per arm"
+       },
+       {
+        "naam": "Lat pulldown of naar beneden trekken met elastiek",
+        "spieren": "Brede rugspier: de trekfase van de zwemslag",
+        "sets": "3×12"
+       },
+       {
+        "naam": "Push-ups (op knieën mag)",
+        "spieren": "Borst, triceps, voorkant schouder",
+        "sets": "3×8–12"
+       },
+       {
+        "naam": "Face pulls of pull-aparts met elastiek",
+        "spieren": "Achterkant schouders, bovenrug, houding",
+        "sets": "3×15"
+       },
+       {
+        "naam": "Buitenwaartse rotatie met elastiek (elleboog tegen de zij)",
+        "spieren": "Rotatorcuff: beschermt de schouder bij zwemmen",
+        "sets": "2×15 per arm"
+       },
+       {
+        "naam": "Plank",
+        "spieren": "Hele romp",
+        "sets": "3×30–45 s"
+       },
+       {
+        "naam": "Bird dog (op handen en knieën, arm en been strekken)",
+        "spieren": "Onderrug, billen, stabiliteit",
+        "sets": "3×8 per kant"
+       }
+      ]
      }
     ],
     [
@@ -2790,7 +4842,7 @@ window.PLAN = {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 80,
-      "detail": "2400 m: 300 inzwemmen · 6×50 drills · 1700 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2400 m: 300 inzwemmen · 6×50 drills · 1700 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
@@ -2798,9 +4850,10 @@ window.PLAN = {
       "sport": "kracht",
       "title": "Mobiliteit",
       "min": 20,
-      "detail": "Lichte core en rekken, geen zware gewichten.",
+      "detail": "Rekken en lichte core. Geen gewichten meer.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Heupen, kuiten, rug"
      }
     ],
     [
@@ -2858,8 +4911,8 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Duurloop rustig",
       "min": 60,
-      "detail": "60 min rustig, hartslag onder 140.",
-      "zone": "Z2",
+      "detail": "60 min rustig, hartslag onder 150.",
+      "zone": "Z1–Z2",
       "key": false
      }
     ]
@@ -2878,7 +4931,7 @@ window.PLAN = {
       "sport": "zwemmen",
       "title": "Zwemmen techniek + duur",
       "min": 65,
-      "detail": "2000 m: 300 inzwemmen · 6×50 drills · 1300 m in 200-en (30 s rust) · 100 uitzwemmen.",
+      "detail": "2000 m: 300 inzwemmen · 6×50 drills · 1300 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
       "zone": "Z2",
       "key": false
      },
@@ -2886,9 +4939,10 @@ window.PLAN = {
       "sport": "kracht",
       "title": "Mobiliteit",
       "min": 20,
-      "detail": "Lichte core en rekken, geen zware gewichten.",
+      "detail": "Rekken en lichte core. Geen gewichten meer.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Heupen, kuiten, rug"
      }
     ],
     [
@@ -2934,9 +4988,10 @@ window.PLAN = {
       "sport": "kracht",
       "title": "Mobiliteit",
       "min": 20,
-      "detail": "Lichte core en rekken, geen zware gewichten.",
+      "detail": "Rekken en lichte core. Geen gewichten meer.",
       "zone": "",
-      "key": false
+      "key": false,
+      "lichaam": "Heupen, kuiten, rug"
      }
     ],
     [
@@ -2962,8 +5017,8 @@ window.PLAN = {
       "sport": "lopen",
       "title": "Duurloop rustig",
       "min": 60,
-      "detail": "60 min rustig, hartslag onder 140.",
-      "zone": "Z2",
+      "detail": "60 min rustig, hartslag onder 150.",
+      "zone": "Z1–Z2",
       "key": false
      }
     ]

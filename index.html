@@ -4,7 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Op weg naar Hoorn</title>
-<meta name="robots" content="noindex">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="bingbot" content="noindex, nofollow">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏁</text></svg>">
 <style>
 :root{--bg:#f6f5f1;--card:#fff;--ink:#16191d;--muted:#666d75;--line:#e6e3dd;--accent:#0f4c6b;
@@ -54,7 +56,14 @@ summary{font-weight:700;cursor:pointer}
 details ul{padding-left:20px;margin:10px 0 2px}
 details li{margin:5px 0;font-size:15px}
 table{border-collapse:collapse;width:100%;font-size:15px;margin-top:8px}
-td{padding:6px 4px;border-bottom:1px solid var(--line)}
+td,th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:12px;color:var(--muted);font-weight:600}
+.ex{margin:6px 0 0 18px;font-size:14px;background:none;border:0;padding:0}
+.ex summary{font-weight:600;font-size:14px;color:var(--accent)}
+.ex ol{margin:6px 0 0;padding-left:20px}
+.ex li{margin:5px 0}
+.ex li span{display:block;color:var(--muted);font-size:13px}
+.body{display:inline-block;margin:4px 0 0 18px;background:#f3e8f7;color:#5b1677;border-radius:6px;padding:2px 8px;font-size:13px;font-weight:600}
 .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin:22px 0 4px}
 .legend span{display:flex;align-items:center;gap:6px}
 footer{color:var(--muted);font-size:13px;padding:26px 0 40px}
@@ -89,16 +98,28 @@ footer{color:var(--muted);font-size:13px;padding:26px 0 40px}
   <details>
     <summary>Zones: hoe hard is Z1 t/m Z5?</summary>
     <table>
-      <tr><td><b>Z1</b></td><td>Heel rustig, je kunt zingen</td><td>&lt; 125</td></tr>
-      <tr><td><b>Z2</b></td><td>Rustig, hele zinnen praten</td><td>125–145</td></tr>
-      <tr><td><b>Z3</b></td><td>Tempo / 70.3-tempo, korte zinnen</td><td>146–158</td></tr>
-      <tr><td><b>Z4</b></td><td>Zwaar, een paar woorden</td><td>159–170</td></tr>
-      <tr><td><b>Z5</b></td><td>Maximaal</td><td>&gt; 170</td></tr>
+      <tr><th></th><th>Gevoel</th><th>Lopen</th><th>Fietsen</th></tr>
+      <tr><td><b>Z1</b></td><td>Heel rustig, je kunt zingen</td><td>&lt; 135</td><td>&lt; 120</td></tr>
+      <tr><td><b>Z2</b></td><td>Rustig, hele zinnen praten</td><td>135–150</td><td>120–140</td></tr>
+      <tr><td><b>Z3</b></td><td>Tempo / 70.3-tempo, korte zinnen</td><td>151–160</td><td>141–152</td></tr>
+      <tr><td><b>Z4</b></td><td>Zwaar, een paar woorden</td><td>161–172</td><td>153–166</td></tr>
+      <tr><td><b>Z5</b></td><td>Maximaal</td><td>&gt; 172</td><td>&gt; 166</td></tr>
     </table>
     <ul>
-      <li>Hartslag geldt voor lopen. Op de fiets ligt hij 5–10 slagen lager. Zwemmen gaat op gevoel.</li>
-      <li>Voorlopige zones. Na de testweek (week 9) stellen we ze bij.</li>
-      <li>Rustig is echt rustig: de 15 km van 15 november had een gemiddelde hartslag van 169, en dat is Z4/Z5.</li>
+      <li>Hartslag in slagen per minuut, gebaseerd op haar triatlon van Amstelveen en haar trainingen sinds de zomer. Na de testen in week 9 en 17 stellen we de zones bij.</li>
+      <li><b>Zwemmen</b> gaat op gevoel. Rustig is ongeveer 3:00 per 100 m. De zwemtest in week 2 geeft precieze tempo's.</li>
+      <li>Rustig is echt rustig: de 15 km van 15 november had een gemiddelde hartslag van 169, en dat is Z4.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Waar staat ze nu? (november 2026)</summary>
+    <ul>
+      <li><b>Zwemmen:</b> 2× per week 1,3–1,9 km, rustig rond 3:00/100 m in het zwembad. In haar olympische triatlon in Amstelveen (26 sep) duurde de 1500 m zwemmen ±50 min. Voor de 1,9 km in Hoorn betekent dat ±1 uur, en de limiet is meestal 1u10. <b>Dit is het belangrijkste werkpunt:</b> techniek, langer aan één stuk zwemmen en vanaf mei openwater.</li>
+      <li><b>Fietsen:</b> in Amstelveen 40 km met 27 km/u. De langste rit dit jaar was 57 km (2u25). Sinds oktober fietst ze vooral kort op de Tacx. Hier valt de meeste winst te halen: het schema bouwt de lange rit op naar 4 uur.</li>
+      <li><b>Lopen:</b> haar sterkste onderdeel. Rustige duurlopen gaan ±6:30–7:00/km, 5 km lukt in ±29:30, en in Amstelveen liep ze 10 km in 6:52/km na het fietsen. Werkpunt: rustige lopen echt rustig houden.</li>
+      <li><b>Kracht:</b> trouw 2× per week, dat blijft zo. Maandag benen, billen en buik (A), vrijdag rug, schouders en romp (B).</li>
+      <li><b>Inschatting voor Hoorn</b> bij goede voorbereiding: zwemmen ±1 uur, fietsen ±3u45, lopen ±2u35. Samen met de wissels ongeveer 7–7½ uur.</li>
     </ul>
   </details>
 
@@ -106,6 +127,7 @@ footer{color:var(--muted);font-size:13px;padding:26px 0 40px}
     <summary>Spelregels</summary>
     <ul>
       <li>Dagen schuiven mag. Een gemiste training niet inhalen.</li>
+      <li>Zwemmen is het onderdeel met de meeste tijdsdruk. Als er tijd is, levert een extra zwemtraining (bijvoorbeeld op woensdag) het meeste op.</li>
       <li>Garmin Readiness onder 25 of hersteltijd boven 48 uur: maak van een ★-training een rustige training, of neem rust.</li>
       <li>Koorts of iets op de borst: rust. Pijn die erger wordt tijdens het bewegen: stoppen.</li>
       <li>Controleer bij het zwemmen de baanlengte in het horloge.</li>
@@ -172,7 +194,10 @@ footer{color:var(--muted);font-size:13px;padding:26px 0 40px}
       let h=`<div class="date"><b>${same(dt,today)?"Nu":DAG[d]}</b><span>${fmt(dt)}</span></div><div class="list">`;
       ss.forEach(x=>{
         const m=[dur(x.min),x.zone].filter(Boolean).join(" · ");
-        h+=`<div class="s ${x.sport}" style="--c:${C[x.sport]}"><div class="t"><i class="dot"></i>${esc(x.title)}${x.key?' <span class="star">★</span>':""}${m?` <span class="meta">${esc(m)}</span>`:""}</div>${x.detail?`<p>${esc(x.detail)}</p>`:""}</div>`;
+        const body=x.lichaam?`<span class="body">💪 ${esc(x.lichaam)}</span>`:"";
+        const ex=(x.oefeningen||[]).length?`<details class="ex"><summary>Bekijk de ${x.oefeningen.length} oefeningen</summary><ol>${x.oefeningen.map(o=>`<li><b>${esc(o.naam)}</b> · ${esc(o.sets)}<span>${esc(o.spieren)}</span></li>`).join("")}</ol></details>`:"";
+        const title=x.lichaam?x.title.split(":")[0]:x.title;
+        h+=`<div class="s ${x.sport}" style="--c:${C[x.sport]}"><div class="t"><i class="dot"></i>${esc(title)}${x.key?' <span class="star">★</span>':""}${m?` <span class="meta">${esc(m)}</span>`:""}</div>${body}${x.detail?`<p>${esc(x.detail)}</p>`:""}${ex}</div>`;
       });
       if(lg){
         const lab={goed:"✓ Gedaan · goed",aandacht:"✓ Gedaan · let op",gemist:"Niet gedaan"}[lg.oordeel]||"✓ Gedaan";
