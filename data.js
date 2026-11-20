@@ -33,6 +33,16 @@ window.PLAN = {
    ],
    "oordeel": "aandacht",
    "feedback": "Het eerste half uur was mooi rustig (hartslag 139, Z2). In het tweede half uur ging de hartslag naar 154, en dat is op de fiets al zwaar (Z4). Op een dag met Readiness 7/100 en nog ruim 2 dagen hersteltijd had dat rustig moeten blijven. De rest van vandaag: rust."
+  },
+  "2026-11-20": {
+   "gedaan": [
+    {
+     "sport": "zwemmen",
+     "tekst": "1300 m · 34 min zwemmen (38 min totaal) · ±2:36/100 m · hartslag gem. 125"
+    }
+   ],
+   "oordeel": "goed",
+   "feedback": "Mooi gedaan: 1300 m bij een rustige hartslag van 125, net iets meer dan de geplande 1200 m. Je Readiness staat vandaag op 17/100 met nog 44 uur hersteltijd, dus geniet van je rustige weekend; maandag beginnen we fris aan week 1."
   }
  },
  "race": {
@@ -5113,5 +5123,5 @@ window.PLAN = {
    ]
   }
  ],
- "bijgewerkt": "2026-11-19"
+ "bijgewerkt": "2026-11-20"
 };
