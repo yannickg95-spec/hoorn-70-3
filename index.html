@@ -274,7 +274,6 @@ footer b{font-family:var(--cond);font-size:18px;letter-spacing:.12em;color:#fff;
     document.getElementById("prev").disabled=i===0;
     document.getElementById("next").disabled=i===W.length-1;
     document.getElementById("now").style.display=i===cur?"none":"";
-    history.replaceState&&history.replaceState(null,"","#w"+w.nr);
     const box=document.getElementById("days");box.innerHTML="";
     w.dagen.forEach((ss,d)=>{
       const dt=add(s,d),lg=(P.logboek||{})[iso(dt)];
@@ -302,8 +301,8 @@ footer b{font-family:var(--cond);font-size:18px;letter-spacing:.12em;color:#fff;
   document.getElementById("prev").onclick=()=>show(i-1);
   document.getElementById("next").onclick=()=>show(i+1);
   document.getElementById("now").onclick=()=>show(cur);
-  const m=location.hash.match(/^#w(\d+)$/);
-  show(m?W.findIndex(w=>w.nr===+m[1]):cur);
+  if(location.hash&&history.replaceState)history.replaceState(null,"",location.pathname+location.search);
+  show(cur);
 })();
 </script>
 </body>
