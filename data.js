@@ -43,6 +43,20 @@ window.PLAN = {
    ],
    "oordeel": "goed",
    "feedback": "Mooi gedaan: 1300 m bij een rustige hartslag van 125, net iets meer dan de geplande 1200 m. Je Readiness staat vandaag op 17/100 met nog 44 uur hersteltijd, dus geniet van je rustige weekend; maandag beginnen we fris aan week 1."
+  },
+  "2026-11-23": {
+   "gedaan": [
+    {
+     "sport": "kracht",
+     "tekst": "Kracht A · 26 min · hartslag gem. 89"
+    },
+    {
+     "sport": "zwemmen",
+     "tekst": "1850 m · 42 min zwemmen (1 uur 2 min totaal) · ±2:15/100 m · hartslag gem. 108"
+    }
+   ],
+   "oordeel": "goed",
+   "feedback": "Mooie start van week 1: 's ochtends kracht A (26 min) en 's avonds 1850 m zwemmen, iets meer dan de geplande 1500 m. Met een gemiddelde hartslag van 108 bleef het echt rustig, precies de bedoeling. Let er wel op dat je de 8×50 drills erin houdt; die zijn belangrijker dan de extra meters."
   }
  },
  "race": {
@@ -5123,5 +5137,5 @@ window.PLAN = {
    ]
   }
  ],
- "bijgewerkt": "2026-11-20"
+ "bijgewerkt": "2026-11-24"
 };
