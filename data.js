@@ -77,6 +77,20 @@ window.PLAN = {
    ],
    "oordeel": "goed",
    "feedback": "Goed gedaan: 35 min op 7:15/km met een gemiddelde hartslag van 148, net onder de grens van 150. In de laatste kilometer liep je hartslag naar 151 terwijl je tempo zakte naar 7:38/km; daar mag je gerust even wandelen om onder de 150 te blijven."
+  },
+  "2026-11-26": {
+   "gedaan": [
+    {
+     "sport": "kracht",
+     "tekst": "Kracht B · 25 min · hartslag gem. 90"
+    },
+    {
+     "sport": "zwemmen",
+     "tekst": "1550 m · 49 min zwemmen (53 min totaal) · ±3:11/100 m · hartslag gem. 136"
+    }
+   ],
+   "oordeel": "goed",
+   "feedback": "Knap dat je de training naar donderdag hebt verschoven en gewoon gedaan hebt: kracht B (25 min) en 1550 m zwemmen op ±3:11/100 m. In het blok van 500 m liep je hartslag op naar gemiddeld 151, terwijl je andere stukken rond de 130 zaten; zwem lange stukken net zo ontspannen als de korte."
   }
  },
  "race": {
@@ -175,7 +189,7 @@ window.PLAN = {
    "fase": "reset",
    "label": "Rustig starten",
    "focus": "Rustig beginnen: de afgelopen weken waren zwaar.",
-   "totaal": 350,
+   "totaal": 320,
    "dagen": [
     [
      {
@@ -322,19 +336,19 @@ window.PLAN = {
     [
      {
       "sport": "fietsen",
-      "title": "Duurrit rustig",
-      "min": 60,
-      "detail": "1 uur rustig, Tacx of buiten.",
-      "zone": "Z2",
+      "title": "Duurrit rustig (korter)",
+      "min": 45,
+      "detail": "45 min rustig, Tacx of buiten. Hartslag onder 135.",
+      "zone": "Z1–Z2",
       "key": false
      }
     ],
     [
      {
       "sport": "lopen",
-      "title": "Duurloop rustig",
-      "min": 60,
-      "detail": "60 min rustig, hartslag onder 150.",
+      "title": "Duurloop rustig (korter)",
+      "min": 45,
+      "detail": "45 min rustig, hartslag onder 145. Wandelen mag als je erboven komt.",
       "zone": "Z1–Z2",
       "key": false
      }
@@ -342,7 +356,9 @@ window.PLAN = {
    ],
    "aangepast": {
     "3": "Je zwem- en krachttraining van vrijdag 27 november is naar vandaag verschoven, omdat je vrijdag niet kunt.",
-    "4": "Je kunt vandaag niet trainen; je zwem- en krachttraining is naar donderdag verschoven."
+    "4": "Je kunt vandaag niet trainen; je zwem- en krachttraining is naar donderdag verschoven.",
+    "5": "Je HRV ligt al een paar nachten onder je normale bereik (31 ms, normaal 34–48) en je Readiness zakt (57 → 40). Daarom dit weekend iets korter en heel rustig.",
+    "6": "Je HRV ligt al een paar nachten onder je normale bereik (31 ms, normaal 34–48) en je Readiness zakt (57 → 40). Daarom dit weekend iets korter en heel rustig."
    }
   },
   {
@@ -5157,5 +5173,5 @@ window.PLAN = {
    ]
   }
  ],
- "bijgewerkt": "2026-11-25"
+ "bijgewerkt": "2026-11-27"
 };

@@ -1,21 +1,72 @@
 {
  "2026-11-21": {
   "reden": "Je kunt vandaag niet trainen. Na je zware week is een rustig weekend prima.",
-  "sessies": [{"ref": "rust", "detail": "Rust. Een wandeling mag."}]
+  "sessies": [
+   {
+    "ref": "rust",
+    "detail": "Rust. Een wandeling mag."
+   }
+  ]
  },
  "2026-11-22": {
   "reden": "Je kunt vandaag niet trainen.",
-  "sessies": [{"ref": "rust", "detail": "Rust. Een wandeling mag."}]
+  "sessies": [
+   {
+    "ref": "rust",
+    "detail": "Rust. Een wandeling mag."
+   }
+  ]
  },
  "2026-11-26": {
   "reden": "Je zwem- en krachttraining van vrijdag 27 november is naar vandaag verschoven, omdat je vrijdag niet kunt.",
   "sessies": [
-   {"sport": "zwemmen", "title": "Zwemmen rustig", "min": 50, "detail": "1500 m rustig doorzwemmen.", "zone": "Z1–Z2"},
-   {"ref": "krachtB", "fase": "reset", "soort": "herstel"}
+   {
+    "sport": "zwemmen",
+    "title": "Zwemmen rustig",
+    "min": 50,
+    "detail": "1500 m rustig doorzwemmen.",
+    "zone": "Z1–Z2"
+   },
+   {
+    "ref": "krachtB",
+    "fase": "reset",
+    "soort": "herstel"
+   }
   ]
  },
  "2026-11-27": {
   "reden": "Je kunt vandaag niet trainen; je zwem- en krachttraining is naar donderdag verschoven.",
-  "sessies": [{"ref": "rust", "detail": "Rust."}]
+  "sessies": [
+   {
+    "ref": "rust",
+    "detail": "Rust."
+   }
+  ]
+ },
+ "2026-11-28": {
+  "reden": "Je HRV ligt al een paar nachten onder je normale bereik (31 ms, normaal 34–48) en je Readiness zakt (57 → 40). Daarom dit weekend iets korter en heel rustig.",
+  "sessies": [
+   {
+    "sport": "fietsen",
+    "title": "Duurrit rustig (korter)",
+    "min": 45,
+    "detail": "45 min rustig, Tacx of buiten. Hartslag onder 135.",
+    "zone": "Z1–Z2",
+    "key": false
+   }
+  ]
+ },
+ "2026-11-29": {
+  "reden": "Je HRV ligt al een paar nachten onder je normale bereik (31 ms, normaal 34–48) en je Readiness zakt (57 → 40). Daarom dit weekend iets korter en heel rustig.",
+  "sessies": [
+   {
+    "sport": "lopen",
+    "title": "Duurloop rustig (korter)",
+    "min": 45,
+    "detail": "45 min rustig, hartslag onder 145. Wandelen mag als je erboven komt.",
+    "zone": "Z1–Z2",
+    "key": false
+   }
+  ]
  }
 }
