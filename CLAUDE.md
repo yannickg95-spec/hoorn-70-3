@@ -20,7 +20,7 @@ Na elke wijziging: `python3 tools/generate.py`, commit en push naar `main`.
 }
 ```
 - `sport`: zwemmen, fietsen, lopen, kracht, of iets anders.
-- `goed` = volgens plan / juiste intensiteit. `aandacht` = gedaan, maar te hard, te lang of op een rustdag. `gemist` = geplande training niet gedaan (geen `gedaan`-items). `advies` = alleen voor vandaag: advies op basis van readiness/HRV (geen `gedaan`-items nodig).
+- `goed` = volgens plan / juiste intensiteit. `aandacht` = gedaan, maar te hard, te lang of op een rustdag. `gemist` = geplande training niet gedaan (geen `gedaan`-items). `advies` = advies voor de volgende dag op basis van readiness/HRV/hersteltijd (geen `gedaan`-items nodig). De avondupdate van die dag vervangt de advies-entry door de gewone entry (goed/aandacht/gemist).
 - Eén entry per datum. Bestaat de datum al, vul dan aan (niet dubbel).
 
 ## Trainingen aanpassen

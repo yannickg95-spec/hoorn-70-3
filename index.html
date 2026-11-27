@@ -292,7 +292,7 @@ footer b{font-family:var(--cond);font-size:18px;letter-spacing:.12em;color:#fff;
         h+=`<div class="s ${x.sport}" style="--c:${C[x.sport]}"><div class="t">${ic?`<span class="ico">${ic}</span>`:'<i class="dot"></i>'}${esc(title)}${x.key?' <span class="star">★</span>':""}${m?` <span class="meta">${esc(m)}</span>`:""}</div>${body}${x.detail?`<p>${esc(x.detail)}</p>`:""}${ex}</div>`;
       });
       if(lg){
-        const lab={goed:"✓ Gedaan · goed",aandacht:"✓ Gedaan · let op",gemist:"Niet gedaan",advies:"Advies voor vandaag"}[lg.oordeel]||"✓ Gedaan";
+        const lab={goed:"✓ Gedaan · goed",aandacht:"✓ Gedaan · let op",gemist:"Niet gedaan",advies:"Advies"}[lg.oordeel]||"✓ Gedaan";
         h+=`<div class="log ${lg.oordeel||""}"><b>${lab}</b>${(lg.gedaan||[]).length?"<ul>"+lg.gedaan.map(a=>"<li>"+esc(a.tekst)+"</li>").join("")+"</ul>":""}${lg.feedback?"<p>"+esc(lg.feedback)+"</p>":""}</div>`;
       }
       el.innerHTML=h+"</div>";box.appendChild(el);
