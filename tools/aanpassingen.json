@@ -57,13 +57,53 @@
   ]
  },
  "2026-11-29": {
-  "reden": "Je HRV ligt al een paar nachten onder je normale bereik (31 ms, normaal 34–48) en je Readiness zakt (57 → 40). Daarom dit weekend iets korter en heel rustig.",
+  "reden": "Je HRV zakte vannacht naar 24 ms (normaal 34–48), je Readiness naar 25 en je Body Battery kwam niet boven de 38. Je lichaam vraagt om herstel, dus vandaag rust.",
+  "sessies": [
+   {
+    "ref": "rust",
+    "detail": "Rust. Een rustige wandeling mag."
+   }
+  ]
+ },
+ "2026-11-30": {
+  "reden": "Je HRV zit al vier nachten onder je normale bereik (vannacht 24 ms, normaal 34–48) en je Readiness zakte naar 25. Daarom begin je deze week rustig; als je herstel terug is, pakken we vanaf vrijdag het gewone schema weer op.",
+  "sessies": [
+   {
+    "sport": "zwemmen",
+    "title": "Zwemmen rustig",
+    "min": 40,
+    "detail": "1200 m: 300 inzwemmen · 6×50 drills · rest rustig doorzwemmen.",
+    "zone": "Z1–Z2",
+    "key": false
+   },
+   {
+    "ref": "krachtA",
+    "fase": "basis1",
+    "soort": "herstel"
+   }
+  ]
+ },
+ "2026-12-01": {
+  "reden": "Je HRV zit al vier nachten onder je normale bereik (vannacht 24 ms, normaal 34–48) en je Readiness zakte naar 25. Daarom begin je deze week rustig; als je herstel terug is, pakken we vanaf vrijdag het gewone schema weer op.",
+  "sessies": [
+   {
+    "sport": "fietsen",
+    "title": "Tacx rustig",
+    "min": 40,
+    "detail": "40 min rustig, cadans 85–95. Hartslag onder 135, geen tempoblokken.",
+    "zone": "Z1–Z2",
+    "key": false
+   }
+  ]
+ },
+ "2026-12-02": {
+  "reden": "Je HRV zit al vier nachten onder je normale bereik (vannacht 24 ms, normaal 34–48) en je Readiness zakte naar 25. Daarom begin je deze week rustig; als je herstel terug is, pakken we vanaf vrijdag het gewone schema weer op.",
   "sessies": [
    {
     "sport": "lopen",
-    "title": "Duurloop rustig (korter)",
-    "min": 45,
-    "detail": "45 min rustig, hartslag onder 145. Wandelen mag als je erboven komt.",
+    "title": "Hardlopen rustig",
+    "min": 35,
+    "detail": "35 min rustig, hartslag onder 145. Geen versnellingen; wandelen mag als je erboven komt.",
     "zone": "Z1–Z2",
     "key": false
    }

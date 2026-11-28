@@ -91,6 +91,20 @@ window.PLAN = {
    ],
    "oordeel": "goed",
    "feedback": "Knap dat je de training naar donderdag hebt verschoven en gewoon gedaan hebt: kracht B (25 min) en 1550 m zwemmen op ±3:11/100 m. In het blok van 500 m liep je hartslag op naar gemiddeld 151, terwijl je andere stukken rond de 130 zaten; zwem lange stukken net zo ontspannen als de korte."
+  },
+  "2026-11-28": {
+   "gedaan": [
+    {
+     "sport": "fietsen",
+     "tekst": "Tacx · 45 min · hartslag gem. 126 (max 135)"
+    }
+   ],
+   "oordeel": "goed",
+   "feedback": "Precies zoals bedoeld: 45 min op de Tacx met een gemiddelde hartslag van 126 en nooit boven de 135. Je HRV (24 ms, normaal 34–48) en je Body Battery (nu 16) laten wel zien dat je lichaam nog niet hersteld is, dus gun jezelf morgen rust."
+  },
+  "2026-11-29": {
+   "oordeel": "advies",
+   "feedback": "Je HRV zit al vier nachten onder je normale bereik en zakte vannacht naar 24 ms, je Readiness daalde van 50 naar 25 en je sliep maar 5,5–6,5 uur. Neem morgen rust in plaats van de duurloop; een rustige wandeling mag."
   }
  },
  "race": {
@@ -189,7 +203,7 @@ window.PLAN = {
    "fase": "reset",
    "label": "Rustig starten",
    "focus": "Rustig beginnen: de afgelopen weken waren zwaar.",
-   "totaal": 320,
+   "totaal": 275,
    "dagen": [
     [
      {
@@ -345,11 +359,11 @@ window.PLAN = {
     ],
     [
      {
-      "sport": "lopen",
-      "title": "Duurloop rustig (korter)",
-      "min": 45,
-      "detail": "45 min rustig, hartslag onder 145. Wandelen mag als je erboven komt.",
-      "zone": "Z1–Z2",
+      "sport": "rust",
+      "title": "Rust",
+      "min": 0,
+      "detail": "Rust. Een rustige wandeling mag.",
+      "zone": "",
       "key": false
      }
     ]
@@ -358,7 +372,7 @@ window.PLAN = {
     "3": "Je zwem- en krachttraining van vrijdag 27 november is naar vandaag verschoven, omdat je vrijdag niet kunt.",
     "4": "Je kunt vandaag niet trainen; je zwem- en krachttraining is naar donderdag verschoven.",
     "5": "Je HRV ligt al een paar nachten onder je normale bereik (31 ms, normaal 34–48) en je Readiness zakt (57 → 40). Daarom dit weekend iets korter en heel rustig.",
-    "6": "Je HRV ligt al een paar nachten onder je normale bereik (31 ms, normaal 34–48) en je Readiness zakt (57 → 40). Daarom dit weekend iets korter en heel rustig."
+    "6": "Je HRV zakte vannacht naar 24 ms (normaal 34–48), je Readiness naar 25 en je Body Battery kwam niet boven de 38. Je lichaam vraagt om herstel, dus vandaag rust."
    }
   },
   {
@@ -367,22 +381,22 @@ window.PLAN = {
    "fase": "basis1",
    "label": "Opbouwweek",
    "focus": "Aerobe basis. Vrijdag een zwemtest: daarmee bepalen we je zwemtempo's.",
-   "totaal": 410,
+   "totaal": 370,
    "dagen": [
     [
      {
       "sport": "zwemmen",
-      "title": "Zwemmen techniek + duur",
-      "min": 55,
-      "detail": "1600 m: 300 inzwemmen · 6×50 drills · 900 m in blokken van 100–200 m (30 s rust) · 100 uitzwemmen.",
-      "zone": "Z2",
+      "title": "Zwemmen rustig",
+      "min": 40,
+      "detail": "1200 m: 300 inzwemmen · 6×50 drills · rest rustig doorzwemmen.",
+      "zone": "Z1–Z2",
       "key": false
      },
      {
       "sport": "kracht",
       "title": "Kracht A: Benen, billen, heupen & buik",
-      "min": 35,
-      "detail": "Gewicht zo kiezen dat de laatste 2 herhalingen zwaar zijn, maar de techniek goed blijft. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
+      "min": 25,
+      "detail": "Herstelweek: 2 sets per oefening, licht gewicht. Sterke benen en billen geven kracht op de fiets en beschermen knieën en heupen bij het lopen.",
       "zone": "",
       "key": false,
       "lichaam": "Benen, billen, heupen & buik",
@@ -428,21 +442,21 @@ window.PLAN = {
     [
      {
       "sport": "fietsen",
-      "title": "Tacx tempo",
-      "min": 50,
-      "detail": "10 min inrijden · 3×6 min tempo (3 min rustig ertussen) · rest rustig.",
-      "zone": "Z3",
-      "key": true
+      "title": "Tacx rustig",
+      "min": 40,
+      "detail": "40 min rustig, cadans 85–95. Hartslag onder 135, geen tempoblokken.",
+      "zone": "Z1–Z2",
+      "key": false
      }
     ],
     [
      {
       "sport": "lopen",
-      "title": "Hardlopen + versnellingen",
-      "min": 40,
-      "detail": "40 min rustig, aan het eind 6×20 s soepel versnellen.",
-      "zone": "Z2",
-      "key": true
+      "title": "Hardlopen rustig",
+      "min": 35,
+      "detail": "35 min rustig, hartslag onder 145. Geen versnellingen; wandelen mag als je erboven komt.",
+      "zone": "Z1–Z2",
+      "key": false
      }
     ],
     [
@@ -531,7 +545,12 @@ window.PLAN = {
       "key": true
      }
     ]
-   ]
+   ],
+   "aangepast": {
+    "0": "Je HRV zit al vier nachten onder je normale bereik (vannacht 24 ms, normaal 34–48) en je Readiness zakte naar 25. Daarom begin je deze week rustig; als je herstel terug is, pakken we vanaf vrijdag het gewone schema weer op.",
+    "1": "Je HRV zit al vier nachten onder je normale bereik (vannacht 24 ms, normaal 34–48) en je Readiness zakte naar 25. Daarom begin je deze week rustig; als je herstel terug is, pakken we vanaf vrijdag het gewone schema weer op.",
+    "2": "Je HRV zit al vier nachten onder je normale bereik (vannacht 24 ms, normaal 34–48) en je Readiness zakte naar 25. Daarom begin je deze week rustig; als je herstel terug is, pakken we vanaf vrijdag het gewone schema weer op."
+   }
   },
   {
    "nr": 3,
@@ -5173,5 +5192,5 @@ window.PLAN = {
    ]
   }
  ],
- "bijgewerkt": "2026-11-27"
+ "bijgewerkt": "2026-11-28"
 };
